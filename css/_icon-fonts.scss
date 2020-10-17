@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../icon-fonts/icomoon.woff?bb4w4m') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.icon {
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-arr_down:before {
+  content: "\e900";
+}
+.icon-arr_left:before {
+  content: "\e901";
+}
+.icon-arr_right:before {
+  content: "\e902";
+}
+.icon-basket:before {
+  content: "\e903";
+}
+.icon-calendar:before {
+  content: "\e904";
+}
+.icon-email:before {
+  content: "\e905";
+}
+.icon-fb:before {
+  content: "\e906";
+}
+.icon-gift:before {
+  content: "\e907";
+}
+.icon-home:before {
+  content: "\e908";
+}
+.icon-location:before {
+  content: "\e909";
+}
+.icon-map_pin:before {
+  content: "\e90a";
+}
+.icon-mark_close:before {
+  content: "\e90b";
+}
+.icon-mark_open:before {
+  content: "\e90c";
+}
+.icon-marker_yes:before {
+  content: "\e90d";
+}
+.icon-phone_call_alt:before {
+  content: "\e90e";
+}
+.icon-phone_call:before {
+  content: "\e90f";
+}
+.icon-picture:before {
+  content: "\e910";
+}
+.icon-search:before {
+  content: "\e911";
+}
+.icon-star_mark:before {
+  content: "\e912";
+}
+.icon-star:before {
+  content: "\e913";
+}
+.icon-user:before {
+  content: "\e914";
+}
+.icon-youtube:before {
+  content: "\e915";
+}

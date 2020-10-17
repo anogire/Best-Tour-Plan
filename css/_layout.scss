@@ -1,0 +1,25 @@
+.qqq {
+  border: 1px solid white;
+}
+.container-fluid--background {
+  min-width: $min;
+  height: 260px;
+  background: linear-gradient(rgba(10, 34, 61, 0.8)), url("../img/newsletter_back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background: linear-gradient(rgba(10, 34, 61, 0.8)), url("../img/newsletter_back_2x.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+}
+.container-fluid--flex {
+  display: flex;
+  align-items: center;
+}
+.row--flex {
+  display: flex;
+  align-items: center;
+}

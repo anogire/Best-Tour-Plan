@@ -1,0 +1,21 @@
+.title-light {
+  font-family: $font-main;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: $color-text-light;
+  @include media-breakpoint-up(md) {
+    font-size: 36px;
+  }
+}
+.font-light {
+  font-family: $font-main;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.25;
+  color: $color-text-light;
+  @include media-breakpoint-up(md) {
+    font-size: 24px;
+  }
+}
