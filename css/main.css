@@ -1672,7 +1672,7 @@ ul {
   font-display: block;
 }
 
-.icon, .card-list__item {
+.icon, .card-list__item, .card-list__item-calendar {
   font-family: 'icomoon' !important;
   speak: never;
   font-style: normal;
@@ -1700,7 +1700,7 @@ ul {
   content: "\e903";
 }
 
-.icon-calendar:before {
+.icon-calendar:before, .card-list__item-calendar:before {
   content: "\e904";
 }
 
@@ -1863,9 +1863,9 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: space-between;
-      -ms-flex-align: space-between;
-          align-items: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 40px;
   padding-bottom: 25px;
 }
@@ -1888,6 +1888,38 @@ ul {
   border-radius: 50%;
   padding-top: 2px;
   background: #333;
+}
+
+.card-list__item-calendar {
+  position: relative;
+  font-size: 17px;
+  color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  padding-left: 40px;
+  padding-bottom: 25px;
+}
+
+.card-list__item-calendar:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .title-light {

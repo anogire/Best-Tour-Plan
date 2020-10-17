@@ -58,7 +58,7 @@
   color: $color-text-light;
   display: flex;
   justify-content: space-between;
-  align-items: space-between;
+  align-items: center;
   padding-left: 40px;
   padding-bottom: 25px;
   @extend .icon;
@@ -75,5 +75,25 @@
     border-radius: 50%;
     padding-top: 2px;
     background: $color-text-main;
+  }
+}
+.card-list__item-calendar {
+  position: relative;
+  font-size: 17px;
+  color: $color-text-main;
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  padding-left: 40px;
+  padding-bottom: 25px;
+  @extend .icon;
+  @extend .icon-calendar;
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
