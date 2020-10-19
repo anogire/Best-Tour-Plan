@@ -1,8 +1,15 @@
 .qqq {
   border: 1px solid white;
 }
-.container-fluid--background {
-  min-width: $min;
+.www {
+  border: 1px solid black;
+}
+.wrap-flex {
+  display: flex;
+  align-items: center;
+}
+.section-newsletter {
+  min-width: $min-content;
   height: 260px;
   background: linear-gradient(rgba(10, 34, 61, 0.8)), url("../img/newsletter_back.jpg");
     background-size: cover;
@@ -15,11 +22,77 @@
       background-repeat: no-repeat;
     }
 }
-.container-fluid--flex {
-  display: flex;
-  align-items: center;
+.section-package {
+  min-width: $min-content;
+  background-color: $color-bg-main;
+  padding-top: 40px;
+  padding-bottom: 65px;
 }
-.row--flex {
+.card-list {
+  height: 100%;
   display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.card-list__title {
+  height: 50px;
+  background-color: $color-bg-additional;
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  flex-shrink: 0;
   align-items: center;
+  padding-left: 24px;
+}
+.card-list__block {
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-right: 15px;
+}
+.card-list__content {
+  height: 100%;
+  background: $color-text-light;
+  border-radius: 0 0 8px 0;
+  padding-bottom: 30px;
+}
+.card-list__content--sheet {
+  border-radius: 0 0 8px 8px;
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+.card-list__item {
+  position: relative;
+  display: flex;
+  padding-left: 40px;
+  margin-top: 20px;
+}
+.card-list__item--check {
+  font-size: 8px;
+  color: $color-text-light;
+  @extend .icon;
+  @extend .icon-marker-yes;
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    padding-top: 2px;
+    background: $color-text-main;
+  }
+}
+.card-list__item--calendar {
+  font-size: 17px;
+  color: $color-text-main;
+  @extend .icon;
+  @extend .icon-calendar;
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 }
