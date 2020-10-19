@@ -1653,7 +1653,8 @@ input {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0;
   padding: 0;
 }
@@ -1672,7 +1673,7 @@ ul {
   font-display: block;
 }
 
-.icon, .card-list__item, .card-list__item-calendar {
+.icon, .card-list__item--check, .card-list__item--calendar {
   font-family: 'icomoon' !important;
   speak: never;
   font-style: normal;
@@ -1684,15 +1685,15 @@ ul {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arr_down:before {
+.icon-arr-down:before {
   content: "\e900";
 }
 
-.icon-arr_left:before {
+.icon-arr-left:before {
   content: "\e901";
 }
 
-.icon-arr_right:before {
+.icon-arr-right:before {
   content: "\e902";
 }
 
@@ -1700,7 +1701,7 @@ ul {
   content: "\e903";
 }
 
-.icon-calendar:before, .card-list__item-calendar:before {
+.icon-calendar:before, .card-list__item--calendar:before {
   content: "\e904";
 }
 
@@ -1724,27 +1725,27 @@ ul {
   content: "\e909";
 }
 
-.icon-map_pin:before {
+.icon-map-pin:before {
   content: "\e90a";
 }
 
-.icon-mark_close:before {
+.icon-mark-close:before {
   content: "\e90b";
 }
 
-.icon-mark_open:before {
+.icon-mark-open:before {
   content: "\e90c";
 }
 
-.icon-marker_yes:before, .card-list__item:before {
+.icon-marker-yes:before, .card-list__item--check:before {
   content: "\e90d";
 }
 
-.icon-phone_call_alt:before {
+.icon-phone-call-alt:before {
   content: "\e90e";
 }
 
-.icon-phone_call:before {
+.icon-phone-call:before {
   content: "\e90f";
 }
 
@@ -1756,7 +1757,7 @@ ul {
   content: "\e911";
 }
 
-.icon-star_mark:before {
+.icon-star-mark:before {
   content: "\e912";
 }
 
@@ -1826,10 +1827,10 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .card-list__title {
-  width: 100%;
   height: 50px;
   background-color: #0a223d;
   border-radius: 4px 4px 0 0;
@@ -1844,33 +1845,40 @@ ul {
   padding-left: 24px;
 }
 
+.card-list__block {
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-right: 15px;
+}
+
 .card-list__content {
-  width: 100%;
   height: 100%;
   background: #fff;
-  border-radius: 8px 8px 8px 0;
-  padding-top: 30px;
-  padding-left: 40px;
+  border-radius: 0 0 8px 0;
+  padding-bottom: 30px;
+}
+
+.card-list__content--sheet {
+  border-radius: 0 0 8px 8px;
+  padding-top: 20px;
+  padding-bottom: 70px;
 }
 
 .card-list__item {
   position: relative;
-  font-size: 8px;
-  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-left: 40px;
-  padding-bottom: 25px;
+  margin-top: 20px;
 }
 
-.card-list__item:before {
+.card-list__item--check {
+  font-size: 8px;
+  color: #fff;
+}
+
+.card-list__item--check:before {
   position: absolute;
   left: 0;
   top: 0;
@@ -1883,43 +1891,22 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 16.5px;
-  height: 16.5px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   padding-top: 2px;
   background: #333;
 }
 
-.card-list__item-calendar {
-  position: relative;
+.card-list__item--calendar {
   font-size: 17px;
   color: #333;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: space-between;
-      -ms-flex-align: space-between;
-          align-items: space-between;
-  padding-left: 40px;
-  padding-bottom: 25px;
 }
 
-.card-list__item-calendar:before {
+.card-list__item--calendar:before {
   position: absolute;
   left: 0;
   top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .title-light {
@@ -1961,6 +1948,17 @@ ul {
   text-transform: capitalize;
 }
 
+.card-list__caption {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.2;
+  color: #ec1f46;
+  display: block;
+  padding-top: 10px;
+  text-transform: capitalize;
+}
+
 .font-light {
   font-family: "Mulish", sans-serif;
   font-weight: 300;
@@ -1986,8 +1984,16 @@ ul {
 .font-dark--spec {
   font-style: italic;
   font-size: 10px;
+}
+
+.dashes {
   display: block;
-  padding-left: 20px;
+  border: none;
+  border-top: 1px dashed #e0e0e0;
+  margin-left: 10px;
+  margin-right: 25px;
+  margin-top: 40px;
+  padding-bottom: 10px;
 }
 
 .input-wrap {

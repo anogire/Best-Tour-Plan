@@ -28,6 +28,16 @@
   color: $color-text-light;
   text-transform: capitalize;
 }
+.card-list__caption {
+  font-family: $font-main;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.2;
+  color: $color-marker;
+  display: block;
+  padding-top: 10px;
+  text-transform: capitalize;
+}
 .font-light {
   font-family: $font-main;
   font-weight: 300;
@@ -48,6 +58,13 @@
 .font-dark--spec {
   font-style: italic;
   font-size: 10px;
+}
+.dashes {
   display: block;
-  padding-left: 20px;
+  border: none;
+  border-top: 1px dashed $color-text-additional-light;
+  margin-left: 10px;
+  margin-right: 25px;
+  margin-top: 40px;
+  padding-bottom: 10px;
 }
