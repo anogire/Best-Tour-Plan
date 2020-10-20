@@ -68,3 +68,16 @@
   margin-top: 40px;
   padding-bottom: 10px;
 }
+.card-photo__caption {
+  font-family: $font-main;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $color-text-light;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 15px;
+}

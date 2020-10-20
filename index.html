@@ -15,7 +15,7 @@
 <body>
   <header></header>
   <main>
-    <section class="container-fluid section-package">
+    <section class="container-fluid section section--package">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -196,9 +196,9 @@
         </div>
       </div>
     </section>
-    <section class="container-fluid section-newsletter wrap-flex">
+    <section class="container-fluid section section--newsletter content-align-center">
       <div class="container">
-        <div class="row wrap-flex">
+        <div class="row content-align-center">
           <div class="col-md-5 offset-md-1 col-lg-4 offset-lg-2">
             <span class="font-light">subscribe to our</span>
             <h2 class="title-light">Newsletter</h2>
@@ -207,13 +207,96 @@
             <div class="input-wrap">
               <input class="input-main input-main--email" type="email" name="email" placeholder="Your email address"
                 maxlength="100" aria-label="enter your email address">
-              <button class="button-submit button-submit--email" type="submit"
+              <button class="button-main button-main--email" type="submit"
                 aria-label="send your email address to subscribe our newsletters">
                 Send
               </button>
             </div>
           </form>
         </div>
+      </div>
+    </section>
+    <section class="container-fluid section section--activities www">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="title-dark">Other activities</h2>
+          </div>
+        </div>
+        <ul class="row card-photo__block">
+          <li class="col-sm-6 col-xl-3 card-photo">
+            <div class="card-photo__item gradient">
+              <picture>
+                <source srcset="img/curious_corner_chamarel.webp 1x,
+                    img/curious_corner_chamarel_2x.webp 2x" type="image/webp">
+                <source srcset="img/curious_corner_chamarel.jpg 1x,
+                    img/curious_corner_chamarel_2x.jpg 2x" type="image/jpeg">
+                <img src="img/curious_corner_chamarel.jpg" class="card-photo__img" alt="illustration of our activities"
+                  loading="lazy">
+              </picture>
+              <div class="card-photo__content">
+                <span class="card-photo__caption">The curious corner of chamarel</span>
+                <button class="button-main button-main--book" aria-label="click the button to book our activity">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="col-sm-6 col-xl-3 card-photo">
+            <div class="card-photo__item gradient">
+              <picture>
+                <source srcset="img/golf_course.webp 1x,
+                    img/golf_course_2x.webp 2x" type="image/webp">
+                <source srcset="img/golf_course.jpg 1x,
+                    img/golf_course_2x.jpg 2x" type="image/jpeg">
+                <img src="img/golf_course.jpg" class="card-photo__img" alt="illustration of our activities"
+                  loading="lazy">
+              </picture>
+              <div class="card-photo__content">
+                <span class="card-photo__caption">Gymkhana club golf course</span>
+                <button class="button-main button-main--book" aria-label="click the button to book our activity">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="col-sm-6 col-xl-3 card-photo">
+            <div class="card-photo__item gradient">
+              <picture>
+                <source srcset="img/tamarind_falls_hiking_trip.webp 1x,
+                    img/tamarind_falls_hiking_trip_2x.webp 2x" type="image/webp">
+                <source srcset="img/tamarind_falls_hiking_trip.jpg 1x,
+                    img/tamarind_falls_hiking_trip_2x.jpg 2x" type="image/jpeg">
+                <img src="img/tamarind_falls_hiking_trip.jpg" class="card-photo__img"
+                  alt="illustration of our activities" loading="lazy">
+              </picture>
+              <div class="card-photo__content">
+                <span class="card-photo__caption">Tamarind falls hiking trip - full day</span>
+                <button class="button-main button-main--book" aria-label="click the button to book our activity">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="col-sm-6 col-xl-3 card-photo">
+            <div class="card-photo__item gradient">
+              <picture>
+                <source srcset="img/blue_marine_discovery_quest.webp 1x,
+                    img/blue_marine_discovery_quest_2x.webp 2x" type="image/webp">
+                <source srcset="img/blue_marine_discovery_quest.jpg 1x,
+                    img/blue_marine_discovery_quest_2x.jpg 2x" type="image/jpeg">
+                <img src="img/blue_marine_discovery_quest.jpg" class="card-photo__img"
+                  alt="illustration of our activities" loading="lazy">
+              </picture>
+              <div class="card-photo__content">
+                <span class="card-photo__caption">The blue marine discovery quest</span>
+                <button class="button-main button-main--book" aria-label="click the button to book our activity">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
