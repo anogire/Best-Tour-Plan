@@ -1,20 +1,6 @@
 .input-wrap {
   display: flex;
 }
-.button-submit {
-  border-radius: 0 4px 4px 0;
-  background-color: $color-marker;
-  font-family: $font-main;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.25;
-  color: $color-text-light;
-  text-align: center;
-}
-.button-submit--email {
-  width: 65px;
-  height: 55px;
-}
 .input-main {
   border-radius: 4px 0 0 4px;
   background-color: $color-text-light;
@@ -31,4 +17,36 @@
 .input-main--email {
   width: 285px;
   height: 55px;
+}
+.button-main {
+  background-color: $color-marker;
+  border-radius: 4px;
+  font-family: $font-additional;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3;
+  color: $color-text-light;
+  text-align: center;
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 1px solid $color-text-light;
+    text-decoration: underline;
+  }
+  &:active {
+    background-color: $color-text-light;
+    border: 1px solid $color-marker;
+    color: $color-marker;
+  }
+}
+.button-main--book {
+  width: 100px;
+  height: 30px;
+}
+.button-main--email {
+  width: 65px;
+  height: 55px;
+  border-radius: 0 4px 4px 0;
+  font-family: $font-main;
+  line-height: 1.25;
 }
