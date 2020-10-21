@@ -1,7 +1,11 @@
 .input-wrap {
   display: flex;
+  padding-top: 20px;
+  @include media-breakpoint-up(md) {
+    padding-top: 0;
+  }
 }
-.input-main {
+.main-input {
   border-radius: 4px 0 0 4px;
   background-color: $color-text-light;
   font-family: $font-main;
@@ -14,11 +18,11 @@
     color: $color-text-additional;
   }
 }
-.input-main--email {
+.main-input--email {
   width: 285px;
   height: 55px;
 }
-.button-main {
+.main-button {
   background-color: $color-marker;
   border-radius: 4px;
   font-family: $font-additional;
@@ -39,14 +43,43 @@
     color: $color-marker;
   }
 }
-.button-main--book {
+.main-button--additional-nav {
+  height: 40px;
+  font-size: 14px;
+  padding-right: 10px;
+  padding-left: 10px;
+  &:hover,
+  &:focus {
+    border-color: $color-marker;
+  }
+}
+.main-button--book {
   width: 100px;
   height: 30px;
 }
-.button-main--email {
+.main-button--email {
   width: 65px;
   height: 55px;
   border-radius: 0 4px 4px 0;
   font-family: $font-main;
   line-height: 1.25;
+}
+.main-nav__button {
+  background-color: transparent;
+  font-family: $font-main;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.3;
+  color: $color-text-light;
+  text-transform: uppercase;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 1px solid $color-text-light;
+    border-radius: 4px;
+    margin-bottom: -2px;
+  }
 }

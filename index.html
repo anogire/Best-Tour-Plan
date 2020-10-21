@@ -15,6 +15,104 @@
 <body>
   <header></header>
   <main>
+    <section class="container-fluid section section--main-nav">
+      <h2 class="caption-hidden">Main navigation</h2>
+      <div class="container">
+        <button class="main-nav__button" type="button" data-toggle="collapse" data-target="#collapse-main-nav"
+          aria-expanded="false" aria-controls="collapse-main-nav">
+          Navigation
+        </button>
+        <nav class="collapse collapse-nav" id="collapse-main-nav">
+          <ul class="row no-gutters navigation">
+            <li class="col-auto">
+              <a href="/" class="main-nav__item" aria-label="click to see all our deals">
+                All Deals
+              </a>
+            </li>
+            <li class="col-auto">
+              <a href="/" class="main-nav__item" aria-label="click to see hotels">
+                Hotels
+              </a>
+            </li>
+            <li class="col-auto">
+              <a href="/" class="main-nav__item" aria-label="click to see different activities">
+                Activities
+              </a>
+            </li>
+            <li class="col-auto">
+              <a href="/" class="main-nav__item" aria-label="click to see hotel day packages">
+                Hotel Day Packages
+              </a>
+            </li>
+            <li class="col-auto">
+              <a href="/" class="main-nav__item" aria-label="click to see hotel's restaurants">
+                Restaurants
+              </a>
+            </li>
+            <li class="col-auto">
+              <a href="/" class="main-nav__item" aria-label="click to see hotel's events">
+                Events
+              </a>
+            </li>
+            <li class="col-auto">
+              <a href="/" class="main-nav__item" aria-label="click to see rodrigues">
+                Rodrigues
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section class="container-fluid section section--additional-nav">
+      <h2 class="caption-hidden">Additional navigation</h2>
+      <div class="container">
+        <button class="main-button main-button--additional-nav" type="button" data-toggle="collapse"
+          data-target="#collapse-additional-nav" aria-expanded="false" aria-controls="collapse-additional-nav">
+          Additional navigation
+        </button>
+        <div class="collapse collapse-nav" id="collapse-additional-nav">
+          <ul class="row no-gutters navigation">
+            <li class="col-auto">
+              <button class="additional-nav__item" type="button" aria-label="click to read about package summery">
+                Package summery
+              </button>
+            </li>
+            <li class="col-auto">
+              <button class="additional-nav__item" type="button" aria-label="click to read information about hotel">
+                Hotel information
+              </button>
+            </li>
+            <li class="col-auto">
+              <button class="additional-nav__item" type="button" aria-label="click to read about rooms">
+                Rooms
+              </button>
+            </li>
+            <li class="col-auto">
+              <button class="additional-nav__item" type="button"
+                aria-label="click to read about facilities and activities">
+                Facilities & activities
+              </button>
+            </li>
+            <li class="col-auto">
+              <button class="additional-nav__item" type="button"
+                aria-label="click to read about dining and entertainment">
+                Dining & Entertainment
+              </button>
+            </li>
+            <li class="col-auto">
+              <button class="additional-nav__item" type="button" aria-label="click to read reviews">
+                Reviews
+              </button>
+            </li>
+            <li class="col-auto">
+              <button class="additional-nav__item" type="button" aria-label="click to read questions and answers">
+                Questions & Answers
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <section class="container-fluid section section--package">
       <div class="container">
         <div class="row">
@@ -205,9 +303,9 @@
           </div>
           <form class="col-md-6">
             <div class="input-wrap">
-              <input class="input-main input-main--email" type="email" name="email" placeholder="Your email address"
+              <input class="main-input main-input--email" type="email" name="email" placeholder="Your email address"
                 maxlength="100" aria-label="enter your email address">
-              <button class="button-main button-main--email" type="submit"
+              <button class="main-button main-button--email" type="submit"
                 aria-label="send your email address to subscribe our newsletters">
                 Send
               </button>
@@ -224,7 +322,7 @@
           </div>
         </div>
         <ul class="row card-photo__block">
-          <li class="col-sm-6 col-xl-3 card-photo">
+          <li class="col-sm-6 col-lg-3 card-photo">
             <div class="card-photo__item gradient">
               <picture>
                 <source srcset="img/curious_corner_chamarel.webp 1x,
@@ -236,13 +334,13 @@
               </picture>
               <div class="card-photo__content">
                 <span class="card-photo__caption">The curious corner of chamarel</span>
-                <button class="button-main button-main--book" aria-label="click the button to book our activity">
+                <button class="main-button main-button--book" aria-label="click the button to book our activity">
                   Book Now
                 </button>
               </div>
             </div>
           </li>
-          <li class="col-sm-6 col-xl-3 card-photo">
+          <li class="col-sm-6 col-lg-3 card-photo">
             <div class="card-photo__item gradient">
               <picture>
                 <source srcset="img/golf_course.webp 1x,
@@ -254,13 +352,13 @@
               </picture>
               <div class="card-photo__content">
                 <span class="card-photo__caption">Gymkhana club golf course</span>
-                <button class="button-main button-main--book" aria-label="click the button to book our activity">
+                <button class="main-button main-button--book" aria-label="click the button to book our activity">
                   Book Now
                 </button>
               </div>
             </div>
           </li>
-          <li class="col-sm-6 col-xl-3 card-photo">
+          <li class="col-sm-6 col-lg-3 card-photo">
             <div class="card-photo__item gradient">
               <picture>
                 <source srcset="img/tamarind_falls_hiking_trip.webp 1x,
@@ -272,13 +370,13 @@
               </picture>
               <div class="card-photo__content">
                 <span class="card-photo__caption">Tamarind falls hiking trip - full day</span>
-                <button class="button-main button-main--book" aria-label="click the button to book our activity">
+                <button class="main-button main-button--book" aria-label="click the button to book our activity">
                   Book Now
                 </button>
               </div>
             </div>
           </li>
-          <li class="col-sm-6 col-xl-3 card-photo">
+          <li class="col-sm-6 col-lg-3 card-photo">
             <div class="card-photo__item gradient">
               <picture>
                 <source srcset="img/blue_marine_discovery_quest.webp 1x,
@@ -290,7 +388,7 @@
               </picture>
               <div class="card-photo__content">
                 <span class="card-photo__caption">The blue marine discovery quest</span>
-                <button class="button-main button-main--book" aria-label="click the button to book our activity">
+                <button class="main-button main-button--book" aria-label="click the button to book our activity">
                   Book Now
                 </button>
               </div>
@@ -301,12 +399,12 @@
     </section>
   </main>
   <footer></footer>
-  <!--
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
   <script src="bootstrap/dist/js/bootstrap.min.js"></script>
-  -->
+
 </body>
 
 </html>
