@@ -92,3 +92,20 @@
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
+.font-info {
+  @include font-rule($font-main, 400, 10px, $color-text-main);
+}
+.font-info--spec {
+  font-weight: 700;
+}
+.icon-info {
+  font-size: 16px;
+  color: $color-text-main;
+  padding-left: 10px;
+  padding-right: 10px;
+  @include media-breakpoint-up(md) {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+}
+/*font-rule($font-family, $font-weight, $font-size, $color, $line-height: 1.3, $transform: none)*/
