@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../icon-fonts/icomoon.woff?bb4w4m') format('woff');
+  src:  url('../icon-fonts/icomoon.woff?s8qg4j') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -16,6 +16,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .icon-arr-down:before {
   content: "\e900";
 }
@@ -81,4 +82,7 @@
 }
 .icon-youtube:before {
   content: "\e915";
+}
+.icon-menu:before {
+  content: "\e9bd";
 }
