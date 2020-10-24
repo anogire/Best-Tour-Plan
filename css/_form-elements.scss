@@ -5,7 +5,7 @@
     padding-top: 0;
   }
 }
-.input-wrap--search {
+.input-wrap-search {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,19 +15,19 @@
 }
 .main-input {
   border-radius: 4px 0 0 4px;
-  background-color: $color-text-light;
   font-family: $font-main;
   font-weight: 300;
   font-size: 14px;
   line-height: 1.3;
-  color: $color-text-dark;
   padding-left: 33px;
+  background-color: $color-text-light;
+  color: $color-text-dark;
+  &::placeholder {
+    color: $color-text-additional;
+  }
   &:hover,
   &:focus {
     outline: 1px solid $color-marker;
-  }
-  &::placeholder {
-    color: $color-text-additional;
   }
 }
 .main-input--email {
@@ -41,7 +41,7 @@
   font-weight: 400;
   background-color: $color-bg-main;
   &::placeholder {
-    color: $color-text-main;
+    color: $color-text-dark;
   }
 }
 .main-button {
@@ -54,6 +54,7 @@
   color: $color-text-light;
   border: 1px solid $color-marker;
   text-align: center;
+  display: inline-block;
   &:hover,
   &:focus {
     outline: none;
@@ -67,10 +68,9 @@
   }
 }
 .main-button--additional-nav {
-  height: 40px;
   font-size: 14px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 10px 15px;
+  text-align: center;
   &:hover,
   &:focus {
     text-decoration: none;
@@ -81,12 +81,14 @@
   }
 }
 .main-button--book {
-  width: 100px;
-  height: 30px;
+  padding: 7px 22px;
+}
+.main-button--offer {
+  padding: 10px 26px;
+  font-size: 14px;
 }
 .main-button--email {
-  width: 65px;
-  height: 55px;
+  padding: 18px 18px;
   border-radius: 0 4px 4px 0;
   font-family: $font-main;
   line-height: 1.25;
@@ -102,9 +104,9 @@
     color: $color-marker;
   }
 }
-.main-button--search {
-  width: 65px;
-  height: 40px;
+.main-button--alt {
+  padding: 8px 26px;
+  text-align: center;
   border-radius: 0 4px 4px 0;
   color: $color-text-light;
   font-size: 16px;
@@ -114,12 +116,13 @@
     border-color: $color-marker;
   }
 }
-.nav__main-button {
+.nav-button {
   background-color: transparent;
   font-size: 30px;
   color: $color-text-light;
   display: block;
-  margin: auto;
+  margin-left: auto;
+  margin-right: -10px;
   padding: 10px;
   &:hover,
   &:focus {
@@ -128,25 +131,44 @@
     border-radius: 4px;
     margin-bottom: -2px;
   }
+  &:active {
+    outline: none;
+    border: 1px solid transparent;
+    margin-bottom: -2px;
+  }
   @include media-breakpoint-up(md) {
     display: none;
   }
 }
 .dropdown-button {
+  position: relative;
   border: 1px solid transparent;
   color: transparent;
   background-color: transparent;
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
-  padding-left: 15px;
-  margin-right: -10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-left: 15px;
+  @extend .icon;
+  @extend .icon-arr-down;
+  &:before {
+    position: absolute;
+    right: 0;
+    font-size: 25px;
+    color: $color-text-dark;
+  }
   &:hover,
-  &:focus,
-  &:active {
+  &:focus {
     outline: none;
     border-color: $color-marker;
+  }
+  &:active {
+    outline: none;
+    border-color: transparent;
+    &:before {
+      color: $color-marker;
+    }
   }
 }

@@ -14,18 +14,18 @@
 
 <body>
   <header>
-    <section class="container-fluid section section--info">
+    <section class="section section--info">
       <h2 class="caption-hidden">Additional information</h2>
       <div class="container">
-        <div class="row content-align-center content-align-center--info">
-          <div class="col-sm-auto col-md-7 col-lg-8 content-align-center content-align-center--info-spec">
+        <div class="row info">
+          <div class="col-sm-auto col-md-7 col-lg-8 info-text">
             <span class="font-info font-info--spec">Questions? Need Help?</span>
             <span class="font-info">&nbsp;&nbsp;Call us on&nbsp;</span>
             <a href="tel:1234561500" class="font-info info-link" aria-label="Call us">
               (+123) 456 1500
             </a>
           </div>
-          <div class="col-sm-auto col-md-5 col-lg-4 content-align-center content-align-center--info">
+          <div class="col-sm-auto col-md-5 col-lg-4 info">
             <a href="/" class="font-info info-link" aria-label="click to read about our btp gift card">
               <span class="icon icon-gift icon-info"></span>
               BTP Gift Card
@@ -40,30 +40,29 @@
     </section>
     <section class="container section section--logo">
       <h2 class="caption-hidden">Custom cart and site navigation</h2>
-      <div class="row content-align-center">
-        <div class="col-lg-3 content-align-center content-align-center--logo">
-          <a href="/" class="logo-img" aria-label="Best tour plan logo">
+      <div class="row content-center">
+        <div class="col-lg-3 logo">
+          <a href="/" class="logo__img" aria-label="Best tour plan logo">
             <img src="img/logo.svg" width="177" height="24" alt="Best tour plan logo">
           </a>
         </div>
         <form class="col-md-6 col-lg-4">
-          <div class="input-wrap--search">
+          <div class="input-wrap-search">
             <input class="main-input main-input--search" type="search" name="search" placeholder="Search Location"
               maxlength="500" aria-label="search through site content">
-            <button class="main-button main-button--search icon icon-search" type="submit"
+            <button class="main-button main-button--alt icon icon-search" type="submit"
               aria-label="click to search through site content">
             </button>
           </div>
         </form>
         <div class="col-md-6 col-lg-5">
-          <div class="customer">
-            <span class="icon icon-basket customer__basket"></span>
-            <img src="img/client2.jpg" width="40" height="40" class="customer__img" alt="customer photo">
-            <span class="customer__name">Nathan</span>
+          <div class="user">
+            <span class="icon icon-cart user__cart"></span>
+            <img src="img/client2.jpg" width="40" height="40" class="user__img" alt="user photo">
+            <span class="user__name">Nathan</span>
             <div class="dropdown">
               <button class="dropdown-toggle dropdown-button" type="button" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false" aria-label="click to see customer information">
-                <span class="icon icon-arr-down"></span>
+                aria-expanded="false" aria-label="click to see user information">
               </button>
               <ul class="dropdown-menu dropdown-menu-right">
                 <li>
@@ -82,47 +81,46 @@
         </div>
       </div>
     </section>
-    <section class="container-fluid section section--main-nav">
+    <section class="section section--main-nav">
       <h2 class="caption-hidden">Main navigation</h2>
       <div class="container">
-        <button class="nav__main-button icon icon-menu" type="button" data-toggle="collapse"
-          data-target="#collapse-main-nav" aria-expanded="false" aria-controls="collapse-main-nav"
-          aria-label="click to see main navigation">
+        <button class="nav-button icon icon-menu" type="button" data-toggle="collapse" data-target="#collapse-main-nav"
+          aria-expanded="false" aria-controls="collapse-main-nav" aria-label="click to see main navigation">
         </button>
         <nav class="collapse collapse-nav" id="collapse-main-nav">
           <ul class="nav">
             <li>
-              <a href="/" class="nav__main-item" aria-label="click to see all our deals">
+              <a href="/" class="nav__item" aria-label="click to see all our deals">
                 All Deals
               </a>
             </li>
             <li>
-              <a href="/" class="nav__main-item" aria-label="click to see hotels">
+              <a href="/" class="nav__item" aria-label="click to see hotels">
                 Hotels
               </a>
             </li>
             <li>
-              <a href="/" class="nav__main-item" aria-label="click to see different activities">
+              <a href="/" class="nav__item" aria-label="click to see different activities">
                 Activities
               </a>
             </li>
             <li>
-              <a href="/" class="nav__main-item" aria-label="click to see hotel day packages">
+              <a href="/" class="nav__item" aria-label="click to see hotel day packages">
                 Hotel Day Packages
               </a>
             </li>
             <li>
-              <a href="/" class="nav__main-item" aria-label="click to see hotel's restaurants">
+              <a href="/" class="nav__item" aria-label="click to see hotel's restaurants">
                 Restaurants
               </a>
             </li>
             <li>
-              <a href="/" class="nav__main-item" aria-label="click to see hotel's events">
+              <a href="/" class="nav__item" aria-label="click to see hotel's events">
                 Events
               </a>
             </li>
             <li>
-              <a href="/" class="nav__main-item" aria-label="click to see rodrigues">
+              <a href="/" class="nav__item" aria-label="click to see rodrigues">
                 Rodrigues
               </a>
             </li>
@@ -132,7 +130,7 @@
     </section>
   </header>
   <main>
-    <section class="container-fluid section section--additional-nav">
+    <section class="section section--additional-nav">
       <h2 class="caption-hidden">Additional options</h2>
       <div class="container dropdown">
         <button class="dropdown-toggle main-button main-button--additional-nav" type="button" data-toggle="dropdown"
@@ -185,13 +183,9 @@
         </ul>
       </div>
     </section>
-    <section class="container-fluid section section--package">
+    <section class="section section--package">
       <div class="container">
-        <div class="row">
-          <div class="col">
-            <h2 class="title-dark">Package summery</h2>
-          </div>
-        </div>
+        <h2 class="title-dark">Package summery</h2>
         <div class="row">
           <div class="col-md-6">
             <div class="card-list">
@@ -366,9 +360,188 @@
         </div>
       </div>
     </section>
-    <section class="container-fluid section section--newsletter content-align-center">
+    <section class="section section--visual">
       <div class="container">
-        <div class="row content-align-center">
+        <h2 class="title-dark title-dark--alt">Other Packages</h2>
+        <ul class="row visual-list">
+          <li class="col-lg-8 visual-item">
+            <div class="visual-content visual-content--first">
+              <div class="offer-marker">Flash Offer</div>
+              <div class="offer-img offer-img--first">
+                <picture>
+                  <source srcset="img/blue_haven_hotel.webp 1x,
+                                  img/blue_haven_hotel_2x.webp 2x" type="image/webp">
+                  <source srcset="img/blue_haven_hotel.jpg 1x,
+                                  img/blue_haven_hotel_2x.jpg 2x" type="image/jpeg">
+                  <img src="img/blue_haven_hotel.jpg" width="366" height="500" class="img-rule img-rule--alt"
+                    alt="Hotel Offer" loading="lazy">
+                </picture>
+              </div>
+              <div class="offer offer--first">
+                <span class="icon icon-block">
+                  <span class="icon-star-mark star-rating"></span>
+                  <span class="icon-star-mark star-rating"></span>
+                  <span class="icon-star-mark star-rating"></span>
+                  <span class="icon-star-mark star-rating"></span>
+                  <span class="icon-star-mark star-rating"></span>
+                </span>
+                <h3 class="offer__title">Hotel Blue Haven</h3>
+                <span class="offer__text">
+                  Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est
+                  fugiat velit ea llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum
+                  occaecat eiusmod nsectetur enim laborum magna mollit. Ipsum est fugiat velit ea ullamco do
+                </span>
+                <ul class="offer__list offer__list--first">
+                  <li class="offer__item icon icon-map-pin">1749 Wheeler Ridge Delaware</li>
+                  <li class="offer__item icon icon-user">2 x Guests</li>
+                  <li class="offer__item icon icon-home">1 x Room</li>
+                </ul>
+                <div class="price-wrap">
+                  <div class="offer__price-block">
+                    <span class="old-price">$10,500</span>
+                    <span class="new-price">$8,500</span>
+                  </div>
+                  <button class="main-button main-button--offer" aria-label="click the button to book our offer">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-6 col-lg-4 visual-item">
+            <div class="visual-content">
+              <div class="offer-marker offer-marker--small">Flash Offer</div>
+              <div class="offer-img">
+                <picture>
+                  <source srcset="img/luxury_place_hotel.webp 1x,
+                                  img/luxury_place_hotel_2x.webp 2x" type="image/webp">
+                  <source srcset="img/luxury_place_hotel.jpg 1x,
+                                  img/luxury_place_hotel_2x.jpg 2x" type="image/jpeg">
+                  <img src="img/luxury_place_hotel.jpg" width="350" height="250" class="img-rule" alt="Hotel Offer"
+                    loading="lazy">
+                </picture>
+              </div>
+              <div class="offer">
+                <h3 class="offer__title">LUX* Belle Mare</h3>
+                <ul class="offer__list">
+                  <li class="offer__item icon icon-map-pin">1749 Wheeler Ridge Delaware</li>
+                  <li class="offer__item icon icon-user">2 x Guests</li>
+                  <li class="offer__item icon icon-home">1 x Room</li>
+                </ul>
+                <div class="price-wrap">
+                  <div class="offer__price-block">
+                    <span class="old-price">$8,500</span>
+                    <span class="new-price">$3,000</span>
+                  </div>
+                  <button class="main-button main-button--offer" aria-label="click the button to book our offer">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-6 col-lg-4 visual-item">
+            <div class="visual-content">
+              <div class="offer-marker offer-marker--small">Flash Offer</div>
+              <div class="offer-img">
+                <picture>
+                  <source srcset="img/white_palace_hotel.webp 1x,
+                                  img/white_palace_hotel_2x.webp 2x" type="image/webp">
+                  <source srcset="img/white_palace_hotel.jpg 1x,
+                                  img/white_palace_hotel_2x.jpg 2x" type="image/jpeg">
+                  <img src="img/white_palace_hotel.jpg" width="350" height="250" class="img-rule" alt="Hotel Offer"
+                    loading="lazy">
+                </picture>
+              </div>
+              <div class="offer">
+                <h3 class="offer__title">White Palace</h3>
+                <ul class="offer__list">
+                  <li class="offer__item icon icon-map-pin">1749 Wheeler Ridge Delaware</li>
+                  <li class="offer__item icon icon-user">2 x Guests</li>
+                  <li class="offer__item icon icon-home">1 x Room</li>
+                </ul>
+                <div class="price-wrap">
+                  <div class="offer__price-block">
+                    <span class="old-price">$10,500</span>
+                    <span class="new-price">$9,500</span>
+                  </div>
+                  <button class="main-button main-button--offer" aria-label="click the button to book our offer">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-6 col-lg-4 visual-item">
+            <div class="visual-content">
+              <div class="offer-marker offer-marker--small">Flash Offer</div>
+              <div class="offer-img">
+                <picture>
+                  <source srcset="img/luxury_place_hotel.webp 1x,
+                                  img/luxury_place_hotel_2x.webp 2x" type="image/webp">
+                  <source srcset="img/luxury_place_hotel.jpg 1x,
+                                  img/luxury_place_hotel_2x.jpg 2x" type="image/jpeg">
+                  <img src="img/luxury_place_hotel.jpg" width="350" height="250" class="img-rule" alt="Hotel Offer"
+                    loading="lazy">
+                </picture>
+              </div>
+              <div class="offer">
+                <h3 class="offer__title">Luxury Place</h3>
+                <ul class="offer__list">
+                  <li class="offer__item icon icon-map-pin">1749 Wheeler Ridge Delaware</li>
+                  <li class="offer__item icon icon-user">2 x Guests</li>
+                  <li class="offer__item icon icon-home">1 x Room</li>
+                </ul>
+                <div class="price-wrap">
+                  <div class="offer__price-block">
+                    <span class="old-price">$4,500</span>
+                    <span class="new-price">$2,500</span>
+                  </div>
+                  <button class="main-button main-button--offer" aria-label="click the button to book our offer">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="col-md-6 col-lg-4 visual-item">
+            <div class="visual-content">
+              <div class="offer-marker offer-marker--small">Flash Offer</div>
+              <div class="offer-img">
+                <picture>
+                  <source srcset="img/five_star_hotel.webp 1x,
+                                  img/five_star_hotel_2x.webp 2x" type="image/webp">
+                  <source srcset="img/five_star_hotel.jpg 1x,
+                                  img/five_star_hotel_2x.jpg 2x" type="image/jpeg">
+                  <img src="img/five_star_hotel.jpg" width="350" height="250" class="img-rule" alt="Hotel Offer"
+                    loading="lazy">
+                </picture>
+              </div>
+              <div class="offer">
+                <h3 class="offer__title">Hotel Five Star</h3>
+                <ul class="offer__list">
+                  <li class="offer__item icon icon-map-pin">1749 Wheeler Ridge Delaware</li>
+                  <li class="offer__item icon icon-user">2 x Guests</li>
+                  <li class="offer__item icon icon-home">1 x Room</li>
+                </ul>
+                <div class="price-wrap">
+                  <div class="offer__price-block">
+                    <span class="old-price">$6,500</span>
+                    <span class="new-price">$3,500</span>
+                  </div>
+                  <button class="main-button main-button--offer" aria-label="click the button to book our offer">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section section--newsletter">
+      <div class="container">
+        <div class="row content-center">
           <div class="col-md-5 offset-md-1 col-lg-4 offset-lg-2">
             <span class="font-light">subscribe to our</span>
             <h2 class="title-light">Newsletter</h2>
@@ -386,21 +559,17 @@
         </div>
       </div>
     </section>
-    <section class="container-fluid section section--activities">
+    <section class="section section--activities">
       <div class="container">
-        <div class="row">
-          <div class="col">
-            <h2 class="title-dark">Other activities</h2>
-          </div>
-        </div>
-        <ul class="row card-photo__block">
+        <h2 class="title-dark">Other activities</h2>
+        <ul class="row photos-block">
           <li class="col-sm-6 col-lg-3 card-photo">
             <div class="card-photo__item gradient">
               <picture>
                 <source srcset="img/curious_corner_chamarel.webp 1x,
-                    img/curious_corner_chamarel_2x.webp 2x" type="image/webp">
+                                img/curious_corner_chamarel_2x.webp 2x" type="image/webp">
                 <source srcset="img/curious_corner_chamarel.jpg 1x,
-                    img/curious_corner_chamarel_2x.jpg 2x" type="image/jpeg">
+                                img/curious_corner_chamarel_2x.jpg 2x" type="image/jpeg">
                 <img src="img/curious_corner_chamarel.jpg" width="255" height="255" class="card-photo__img"
                   alt="illustration of our activities" loading="lazy">
               </picture>
@@ -416,9 +585,9 @@
             <div class="card-photo__item gradient">
               <picture>
                 <source srcset="img/golf_course.webp 1x,
-                    img/golf_course_2x.webp 2x" type="image/webp">
+                                img/golf_course_2x.webp 2x" type="image/webp">
                 <source srcset="img/golf_course.jpg 1x,
-                    img/golf_course_2x.jpg 2x" type="image/jpeg">
+                                img/golf_course_2x.jpg 2x" type="image/jpeg">
                 <img src="img/golf_course.jpg" width="255" height="255" class="card-photo__img"
                   alt="illustration of our activities" loading="lazy">
               </picture>
@@ -434,9 +603,9 @@
             <div class="card-photo__item gradient">
               <picture>
                 <source srcset="img/tamarind_falls_hiking_trip.webp 1x,
-                    img/tamarind_falls_hiking_trip_2x.webp 2x" type="image/webp">
+                                img/tamarind_falls_hiking_trip_2x.webp 2x" type="image/webp">
                 <source srcset="img/tamarind_falls_hiking_trip.jpg 1x,
-                    img/tamarind_falls_hiking_trip_2x.jpg 2x" type="image/jpeg">
+                                img/tamarind_falls_hiking_trip_2x.jpg 2x" type="image/jpeg">
                 <img src="img/tamarind_falls_hiking_trip.jpg" width="255" height="255" class="card-photo__img"
                   alt="illustration of our activities" loading="lazy">
               </picture>
@@ -452,9 +621,9 @@
             <div class="card-photo__item gradient">
               <picture>
                 <source srcset="img/blue_marine_discovery_quest.webp 1x,
-                    img/blue_marine_discovery_quest_2x.webp 2x" type="image/webp">
+                                img/blue_marine_discovery_quest_2x.webp 2x" type="image/webp">
                 <source srcset="img/blue_marine_discovery_quest.jpg 1x,
-                    img/blue_marine_discovery_quest_2x.jpg 2x" type="image/jpeg">
+                                img/blue_marine_discovery_quest_2x.jpg 2x" type="image/jpeg">
                 <img src="img/blue_marine_discovery_quest.jpg" width="255" height="255" class="card-photo__img"
                   alt="illustration of our activities" loading="lazy">
               </picture>
