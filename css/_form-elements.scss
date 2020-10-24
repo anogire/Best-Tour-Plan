@@ -5,7 +5,7 @@
     padding-top: 0;
   }
 }
-.input-wrap--search {
+.input-wrap-search {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,6 +54,7 @@
   color: $color-text-light;
   border: 1px solid $color-marker;
   text-align: center;
+  display: inline-block;
   &:hover,
   &:focus {
     outline: none;
@@ -67,10 +68,9 @@
   }
 }
 .main-button--additional-nav {
-  height: 40px;
   font-size: 14px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 10px 15px;
+  text-align: center;
   &:hover,
   &:focus {
     text-decoration: none;
@@ -81,17 +81,14 @@
   }
 }
 .main-button--book {
-  width: 100px;
-  height: 30px;
+  padding: 7px 22px;
 }
 .main-button--offer {
-  width: 120px;
-  height: 40px;
+  padding: 10px 26px;
   font-size: 14px;
 }
 .main-button--email {
-  width: 65px;
-  height: 55px;
+  padding: 18px 18px;
   border-radius: 0 4px 4px 0;
   font-family: $font-main;
   line-height: 1.25;
@@ -108,8 +105,8 @@
   }
 }
 .main-button--alt {
-  width: 65px;
-  height: 40px;
+  padding: 8px 26px;
+  text-align: center;
   border-radius: 0 4px 4px 0;
   color: $color-text-light;
   font-size: 16px;
@@ -119,7 +116,7 @@
     border-color: $color-marker;
   }
 }
-.nav__main-button {
+.nav-button {
   background-color: transparent;
   font-size: 30px;
   color: $color-text-light;
@@ -144,16 +141,24 @@
   }
 }
 .dropdown-button {
+  position: relative;
   border: 1px solid transparent;
   color: transparent;
   background-color: transparent;
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
-  padding-left: 15px;
-  margin-right: -10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-left: 15px;
+  @extend .icon;
+  @extend .icon-arr-down;
+  &:before {
+    position: absolute;
+    right: 0;
+    font-size: 25px;
+    color: $color-text-dark;
+  }
   &:hover,
   &:focus {
     outline: none;
@@ -162,7 +167,7 @@
   &:active {
     outline: none;
     border-color: transparent;
-    .icon-arr-down {
+    &:before {
       color: $color-marker;
     }
   }
