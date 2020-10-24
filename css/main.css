@@ -2793,18 +2793,18 @@ a:active {
   padding-top: 20px;
 }
 
-.photos__block {
+.photos-block {
   padding-top: 0;
 }
 
 @media (min-width: 576px) {
-  .photos__block {
+  .photos-block {
     padding-top: 10px;
   }
 }
 
 @media (min-width: 992px) {
-  .photos__block {
+  .photos-block {
     padding-top: 40px;
   }
 }
@@ -3189,6 +3189,7 @@ a:active {
   min-height: 280px;
   background-color: #fff;
   border-radius: 8px;
+  overflow: visible;
 }
 
 .review-content:before {
@@ -3243,15 +3244,15 @@ a:active {
 
 .review__user-img {
   position: absolute;
-  margin-top: -90px;
+  top: -45px;
   left: 0;
   right: 0;
   width: 90px;
   height: 90px;
   -o-object-fit: cover;
      object-fit: cover;
+  overflow: hidden;
   border-radius: 50%;
-  background: transparent;
   margin-right: auto;
   margin-left: auto;
 }

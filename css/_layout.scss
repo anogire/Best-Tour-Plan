@@ -330,7 +330,7 @@
   align-items: center;
   padding-top: 20px;
 }
-.photos__block {
+.photos-block {
   padding-top: 0;
   @include media-breakpoint-up(sm) {
     padding-top: 10px;
@@ -587,6 +587,7 @@
   min-height: 280px;
   background-color: $color-text-light;
   border-radius: 8px;
+  overflow: visible;
   @extend .icon;
   &:before {
     content: "\e90c";
@@ -623,14 +624,14 @@
 }
 .review__user-img {
   position: absolute;
-  margin-top: -90px;
+  top: -45px;
   left: 0;
   right: 0;
   width: 90px;
   height: 90px;
   object-fit: cover;
+  overflow: hidden;
   border-radius: 50%;
-  background: transparent;
   margin-right: auto;
   margin-left: auto;
 }
