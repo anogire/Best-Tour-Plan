@@ -20,6 +20,13 @@
     font-size: 24px;
   }
 }
+.title-dark--alt {
+  font-size: 24px;
+  text-align: center;
+  @include media-breakpoint-up(lg) {
+    font-size: 36px;
+  }
+}
 .card-caption {
   font-family: $font-main;
   font-weight: 600;
@@ -93,7 +100,11 @@
   overflow: hidden;
 }
 .font-info {
-  @include font-rule($font-main, 400, 10px, $color-text-main);
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.3;
+  color: $color-text-main;
 }
 .font-info--spec {
   font-weight: 700;
@@ -108,4 +119,46 @@
     padding-right: 20px;
   }
 }
-/*font-rule($font-family, $font-weight, $font-size, $color, $line-height: 1.3, $transform: none)*/
+.offer__title {
+  font-family: $font-main;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+  color: $color-text-light;
+}
+.icon-block {
+  display: flex;
+  padding-bottom: 6px;
+}
+.star-rating {
+  font-size: 8px;
+  font-weight: 600;
+  color: $color-rating;
+  padding-right: 2px;
+}
+.new-price {
+  font-family: $font-main;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  color: $color-text-light;
+  display: block;
+  padding-top: 5px;
+}
+.old-price {
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  color: $color-text-light;
+  text-decoration: line-through;
+}
+.offer__text {
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  color: $color-text-light;
+  display: block;
+  padding-top: 26px;
+}
