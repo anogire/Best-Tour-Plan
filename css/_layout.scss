@@ -111,6 +111,18 @@
     padding-bottom: 70px;
   }
 }
+.section--review {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  @include media-breakpoint-up(md) {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+}
 .section--newsletter {
   height: 260px;
   display: flex;
@@ -558,4 +570,108 @@
   width: 60px;
   height: 18px;
   font-size: 8px;
+}
+.review-block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  @include media-breakpoint-up(lg) {
+    margin-top: 115px;
+  }
+}
+.review-content {
+  position: relative;
+  max-width: 730px;
+  min-height: 280px;
+  background-color: $color-text-light;
+  border-radius: 8px;
+  @extend .icon;
+  &:before {
+    content: "\e90c";
+    position: absolute;
+    top: 12px;
+    left: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    opacity: 0.4;
+    color: $color-tp;
+  }
+  &:after {
+    content: "\e90b";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 60px;
+    font-size: 50px;
+    opacity: 0.4;
+    color: $color-tp;
+    display: flex;
+    align-items: center;
+  }
+}
+.review {
+  padding-right: 95px;
+  padding-left: 95px;
+  padding-bottom: 30px;
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.review__user-img {
+  position: absolute;
+  margin-top: -90px;
+  left: 0;
+  right: 0;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: transparent;
+  margin-right: auto;
+  margin-left: auto;
+}
+.control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  font-size: 30px;
+  color: $color-slider;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  @extend .icon;
+  &:before {
+    border-bottom: 2px solid transparent;
+    padding-bottom: 10px;
+  }
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $color-marker;
+    &:before {
+      border-color: $color-marker;
+    }
+  }
+  &:active {
+    outline: none;
+    color: $color-slider;
+    &:before {
+      border-color: $color-slider;
+    }
+  }
+}
+.control--next {
+  right: 0;
+  margin-right: 15px;
+  @extend .icon-arr-right;
+}
+.control--prev {
+  left: 0;
+  margin-left: 15px;
+  @extend .icon-arr-left;
 }
