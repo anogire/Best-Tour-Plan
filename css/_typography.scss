@@ -192,3 +192,65 @@
   display: inline-block;
   padding-top: 25px;
 }
+.user-rating__text {
+  font-family: $font-main;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+  color: $color-text-light;
+  text-align: center;
+}
+.user-rating__mark {
+  font-family: $font-main;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.3;
+  color: $color-text-light;
+}
+.user-rating__mark--small {
+  font-size: 10px;
+}
+.hotel-options {
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  color: $color-text-main;
+  display: inline-block;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  @include media-breakpoint-up(sm) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+.main-title {
+  font-family: $font-main;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.25;
+  color: $color-text-main;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-right: 15px;
+  padding-bottom: 3px;
+  @include media-breakpoint-up(sm) {
+    font-size: 24px;
+    padding-bottom: 0;
+  }
+}
+.hotel-item-text {
+  font-family: $font-additional;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3;
+  color: $color-text-light;
+}
+.hotel-item-text--small {
+  font-size: 10px;
+}
+.hotel-item-text--price {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.4;
+}
