@@ -42,7 +42,7 @@
       <h2 class="caption-hidden">Custom cart and site navigation</h2>
       <div class="row content-center">
         <div class="col-lg-3 logo">
-          <a href="/" class="logo__img" aria-label="Best tour plan logo">
+          <a href="/" class="logo__link" aria-label="Best tour plan logo">
             <img src="img/logo.svg" width="177" height="24" alt="Best tour plan logo">
           </a>
         </div>
@@ -57,7 +57,8 @@
         </form>
         <div class="col-md-6 col-lg-5">
           <div class="user">
-            <span class="icon icon-cart user__cart"></span>
+            <button class="icon icon-cart user__cart" type="button" aria-label="user cart"></button>
+            <!--   <span class="icon icon-cart user__cart" aria-label="user cart"></span>-->
             <img src="img/client2.jpg" width="40" height="40" class="user__img" alt="user photo">
             <span class="user__name">Nathan</span>
             <div class="dropdown">
@@ -378,7 +379,7 @@
                 </picture>
               </div>
               <div class="offer offer--first">
-                <span class="icon icon-block">
+                <span class="icon icon-block" aria-label="hotel rating">
                   <span class="icon-star-mark star-rating"></span>
                   <span class="icon-star-mark star-rating"></span>
                   <span class="icon-star-mark star-rating"></span>
@@ -413,11 +414,11 @@
               <div class="offer-marker offer-marker--small">Flash Offer</div>
               <div class="offer-img">
                 <picture>
-                  <source srcset="img/luxury_place_hotel.webp 1x,
-                                  img/luxury_place_hotel_2x.webp 2x" type="image/webp">
-                  <source srcset="img/luxury_place_hotel.jpg 1x,
-                                  img/luxury_place_hotel_2x.jpg 2x" type="image/jpeg">
-                  <img src="img/luxury_place_hotel.jpg" width="350" height="250" class="img-rule" alt="Hotel Offer"
+                  <source srcset="img/belle_mare_hotel.webp 1x,
+                                  img/belle_mare_hotel_2x.webp 2x" type="image/webp">
+                  <source srcset="img/belle_mare_hotel.jpg 1x,
+                                  img/belle_mare_hotel_2x.jpg 2x" type="image/jpeg">
+                  <img src="img/belle_mare_hotel.jpg" width="350" height="250" class="img-rule" alt="Hotel Offer"
                     loading="lazy">
                 </picture>
               </div>
@@ -537,6 +538,92 @@
             </div>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="section section--review">
+      <div class="container">
+        <h2 class="title-dark title-dark--alt">What people thinks about us</h2>
+        <div class="row">
+          <div id="reviews" class="col carousel slide review-block">
+            <div class="carousel-inner review-content">
+              <span class="icon icon-mark-open open-quote"></span>
+              <div class="carousel-item active">
+                <div class="review">
+                  <img src="img/client1.jpg" width="90" height="90" class="review__user-img" alt="user photo"
+                    loading="lazy">
+                  <span class="review__user-name">Megan Fox</span>
+                  <span class="review__date">Stayed 18 Nov, 2019</span>
+                  <span class="icon icon-block icon-block--review" aria-label="review rating">
+                    <span class="icon-star-mark star-rating"></span>
+                    <span class="icon-star-mark star-rating"></span>
+                    <span class="icon-star-mark star-rating"></span>
+                    <span class="icon-star-mark star-rating"></span>
+                    <span class="icon-star-mark star-rating"></span>
+                  </span>
+                  <span class="review__text">
+                    It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very
+                    well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities
+                    articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of
+                    the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the
+                    popular places but self location in a narrow street is not good. Overall it was a good experience
+                    and could recommend.
+                  </span>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="review">
+                  <img src="img/client1.jpg" width="90" height="90" class="review__user-img" alt="user photo"
+                    loading="lazy">
+                  <span class="review__user-name">Megan Fox</span>
+                  <span class="review__date">Stayed 18 Nov, 2019</span>
+                  <span class="icon icon-block icon-block--review" aria-label="review rating">
+                    <span class="icon-star-mark star-rating"></span>
+                    <span class="icon-star-mark star-rating"></span>
+                    <span class="icon-star-mark star-rating"></span>
+                    <span class="icon-star-mark star-rating"></span>
+                    <span class="icon-star-mark star-rating"></span>
+                  </span>
+                  <span class="review__text">
+                    It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very
+                    well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities
+                    articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of
+                    the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the
+                    popular places but self location in a narrow street is not good. Overall it was a good experience
+                    and could recommend.
+                  </span>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="review">
+                  <img src="img/client1.jpg" width="90" height="90" class="review__user-img" alt="user photo"
+                    loading="lazy">
+                  <span class="review__user-name">Megan Fox</span>
+                  <span class="review__date">Stayed 18 Nov, 2019</span>
+                  <span class="icon icon-block icon-block--review" aria-label="review rating">
+                    <span class="icon-star-mark star-rating"></span>
+                    <span class="icon-star-mark star-rating"></span>
+                    <span class="icon-star-mark star-rating"></span>
+                    <span class="icon-star-mark star-rating"></span>
+                    <span class="icon-star-mark star-rating"></span>
+                  </span>
+                  <span class="review__text">
+                    It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very
+                    well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities
+                    articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of
+                    the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the
+                    popular places but self location in a narrow street is not good. Overall it was a good experience
+                    and could recommend.
+                  </span>
+                </div>
+              </div>
+              <span class="icon icon-mark-close close-quote"></span>
+            </div>
+            <a class="control control--prev" href="#reviews" role="button" data-slide="prev"
+              aria-label="switch to previous review"></a>
+            <a class="control control--next" href="#reviews" role="button" data-slide="next"
+              aria-label="switch to next review"></a>
+          </div>
+        </div>
       </div>
     </section>
     <section class="section section--newsletter">

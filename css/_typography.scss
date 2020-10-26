@@ -130,6 +130,9 @@
   display: flex;
   padding-bottom: 6px;
 }
+.icon-block--review {
+  padding-top: 5px;
+}
 .star-rating {
   font-size: 8px;
   font-weight: 600;
@@ -161,4 +164,31 @@
   color: $color-text-light;
   display: block;
   padding-top: 26px;
+}
+.review__user-name {
+  font-family: $font-main;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  color: $color-marker;
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.review__date {
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.3;
+  color: $color-text-dark;
+}
+.review__text {
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: justify;
+  color: $color-text-main;
+  display: inline-block;
+  padding-top: 25px;
 }
