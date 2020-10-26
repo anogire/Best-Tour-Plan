@@ -33,16 +33,13 @@
     justify-content: flex-start;
   }
 }
-.logo__img {
+.logo__link {
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid transparent;
   &:hover,
   &:focus {
     outline: none;
-    border-bottom: 1px solid $color-text-main;
-    border-color: $color-marker;
-    color: $color-marker;
   }
 }
 .info-link {
@@ -394,6 +391,7 @@
   align-self: flex-end;
   font-size: 24px;
   color: $color-text-dark;
+  background-color: transparent;
   padding-right: 10px;
   &:after {
     content: '2';
@@ -409,6 +407,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $color-marker;
+  }
+  &:active {
+    outline: none;
+    color: $color-text-dark;
   }
   @include media-breakpoint-up(lg) {
     padding-left: 20px;
@@ -553,11 +560,12 @@
   position: absolute;
   left: 0;
   top: 26px;
-  width: 95px;
-  height: 30px;
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 20px;
+  padding-left: 12px;
   background-color: $color-marker;
   border-radius: 0 4px 4px 0;
   font-family: $font-main;
@@ -567,8 +575,7 @@
   color: $color-text-light;
 }
 .offer-marker--small {
-  width: 60px;
-  height: 18px;
+  padding: 4px 10px;
   font-size: 8px;
 }
 .review-block {
@@ -581,6 +588,32 @@
     margin-top: 115px;
   }
 }
+.open-quote {
+  font-size: 50px;
+  opacity: 0.4;
+  color: $color-tp;
+  &:before {
+    position: absolute;
+    top: 12px;
+    left: 60px;
+    right: 60px;
+    display: flex;
+    align-items: center;
+  }
+}
+.close-quote {
+  font-size: 50px;
+  opacity: 0.4;
+  color: $color-tp;
+  &:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 60px;
+    display: flex;
+    align-items: center;
+  }
+}
 .review-content {
   position: relative;
   max-width: 730px;
@@ -588,30 +621,6 @@
   background-color: $color-text-light;
   border-radius: 8px;
   overflow: visible;
-  @extend .icon;
-  &:before {
-    content: "\e90c";
-    position: absolute;
-    top: 12px;
-    left: 60px;
-    display: flex;
-    align-items: center;
-    font-size: 50px;
-    opacity: 0.4;
-    color: $color-tp;
-  }
-  &:after {
-    content: "\e90b";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 60px;
-    font-size: 50px;
-    opacity: 0.4;
-    color: $color-tp;
-    display: flex;
-    align-items: center;
-  }
 }
 .review {
   padding-right: 95px;
@@ -646,24 +655,15 @@
   justify-content: center;
   padding: 15px;
   @extend .icon;
-  &:before {
-    border-bottom: 2px solid transparent;
-    padding-bottom: 10px;
-  }
   &:hover,
   &:focus {
     outline: none;
     color: $color-marker;
-    &:before {
-      border-color: $color-marker;
-    }
   }
   &:active {
     outline: none;
-    color: $color-slider;
-    &:before {
-      border-color: $color-slider;
-    }
+    color: $color-marker;
+    font-weight: 600;
   }
 }
 .control--next {

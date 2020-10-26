@@ -42,7 +42,7 @@
       <h2 class="caption-hidden">Custom cart and site navigation</h2>
       <div class="row content-center">
         <div class="col-lg-3 logo">
-          <a href="/" class="logo__img" aria-label="Best tour plan logo">
+          <a href="/" class="logo__link" aria-label="Best tour plan logo">
             <img src="img/logo.svg" width="177" height="24" alt="Best tour plan logo">
           </a>
         </div>
@@ -57,7 +57,8 @@
         </form>
         <div class="col-md-6 col-lg-5">
           <div class="user">
-            <span class="icon icon-cart user__cart" aria-label="user cart"></span>
+            <button class="icon icon-cart user__cart" type="button" aria-label="user cart"></button>
+            <!--   <span class="icon icon-cart user__cart" aria-label="user cart"></span>-->
             <img src="img/client2.jpg" width="40" height="40" class="user__img" alt="user photo">
             <span class="user__name">Nathan</span>
             <div class="dropdown">
@@ -545,6 +546,7 @@
         <div class="row">
           <div id="reviews" class="col carousel slide review-block">
             <div class="carousel-inner review-content">
+              <span class="icon icon-mark-open open-quote"></span>
               <div class="carousel-item active">
                 <div class="review">
                   <img src="img/client1.jpg" width="90" height="90" class="review__user-img" alt="user photo"
@@ -614,9 +616,12 @@
                   </span>
                 </div>
               </div>
+              <span class="icon icon-mark-close close-quote"></span>
             </div>
-            <a class="control control--prev" href="#reviews" role="button" data-slide="prev"></a>
-            <a class="control control--next" href="#reviews" role="button" data-slide="next"></a>
+            <a class="control control--prev" href="#reviews" role="button" data-slide="prev"
+              aria-label="switch to previous review"></a>
+            <a class="control control--next" href="#reviews" role="button" data-slide="next"
+              aria-label="switch to next review"></a>
           </div>
         </div>
       </div>

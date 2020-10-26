@@ -2180,7 +2180,7 @@ a:active {
   font-display: block;
 }
 
-.icon, .card-list__item--check, .card-list__item--calendar, .review-content, .control, .dropdown-button {
+.icon, .card-list__item--check, .card-list__item--calendar, .control, .dropdown-button {
   font-family: 'icomoon' !important;
   speak: never;
   font-style: normal;
@@ -2364,17 +2364,14 @@ a:active {
   }
 }
 
-.logo__img {
+.logo__link {
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid transparent;
 }
 
-.logo__img:hover, .logo__img:focus {
+.logo__link:hover, .logo__link:focus {
   outline: none;
-  border-bottom: 1px solid #333;
-  border-color: #ec1f46;
-  color: #ec1f46;
 }
 
 .info-link {
@@ -2899,6 +2896,7 @@ a:active {
       align-self: flex-end;
   font-size: 24px;
   color: #000;
+  background-color: transparent;
   padding-right: 10px;
 }
 
@@ -2922,6 +2920,16 @@ a:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.user__cart:hover, .user__cart:focus {
+  outline: none;
+  color: #ec1f46;
+}
+
+.user__cart:active {
+  outline: none;
+  color: #000;
 }
 
 @media (min-width: 992px) {
@@ -3139,15 +3147,16 @@ a:active {
   position: absolute;
   left: 0;
   top: 26px;
-  width: 95px;
-  height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 20px;
+  padding-left: 12px;
   background-color: #ec1f46;
   border-radius: 0 4px 4px 0;
   font-family: "Mulish", sans-serif;
@@ -3158,8 +3167,7 @@ a:active {
 }
 
 .offer-marker--small {
-  width: 60px;
-  height: 18px;
+  padding: 4px 10px;
   font-size: 8px;
 }
 
@@ -3183,6 +3191,44 @@ a:active {
   }
 }
 
+.open-quote {
+  font-size: 50px;
+  opacity: 0.4;
+  color: #f2f2f2;
+}
+
+.open-quote:before {
+  position: absolute;
+  top: 12px;
+  left: 60px;
+  right: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.close-quote {
+  font-size: 50px;
+  opacity: 0.4;
+  color: #f2f2f2;
+}
+
+.close-quote:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .review-content {
   position: relative;
   max-width: 730px;
@@ -3190,39 +3236,6 @@ a:active {
   background-color: #fff;
   border-radius: 8px;
   overflow: visible;
-}
-
-.review-content:before {
-  content: "\e90c";
-  position: absolute;
-  top: 12px;
-  left: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 50px;
-  opacity: 0.4;
-  color: #f2f2f2;
-}
-
-.review-content:after {
-  content: "\e90b";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 60px;
-  font-size: 50px;
-  opacity: 0.4;
-  color: #f2f2f2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .review {
@@ -3275,27 +3288,15 @@ a:active {
   padding: 15px;
 }
 
-.control:before {
-  border-bottom: 2px solid transparent;
-  padding-bottom: 10px;
-}
-
 .control:hover, .control:focus {
   outline: none;
   color: #ec1f46;
 }
 
-.control:hover:before, .control:focus:before {
-  border-color: #ec1f46;
-}
-
 .control:active {
   outline: none;
-  color: #828282;
-}
-
-.control:active:before {
-  border-color: #828282;
+  color: #ec1f46;
+  font-weight: 600;
 }
 
 .control--next {
@@ -3653,7 +3654,6 @@ a:active {
 .main-button:hover, .main-button:focus {
   outline: none;
   border-color: #fff;
-  text-decoration: underline;
 }
 
 .main-button:active {
@@ -3664,13 +3664,20 @@ a:active {
 
 .main-button--additional-nav {
   font-size: 14px;
-  padding: 10px 15px;
+  padding: 10px 18px;
   text-align: center;
 }
 
 .main-button--additional-nav:hover, .main-button--additional-nav:focus {
-  text-decoration: none;
+  background-color: #fff;
   border-color: #ec1f46;
+  color: #ec1f46;
+}
+
+.main-button--additional-nav:active {
+  background-color: #ec1f46;
+  border-color: #ec1f46;
+  color: #fff;
 }
 
 @media (min-width: 992px) {
@@ -3698,7 +3705,6 @@ a:active {
 .main-button--email:hover, .main-button--email:focus {
   outline: none;
   border-color: #fff;
-  text-decoration: underline;
 }
 
 .main-button--email:active {
@@ -3708,15 +3714,46 @@ a:active {
 }
 
 .main-button--alt {
-  padding: 8px 26px;
+  position: relative;
+  padding: 18px 33px;
   text-align: center;
   border-radius: 0 4px 4px 0;
+}
+
+.main-button--alt:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #fff;
   font-size: 16px;
 }
 
-.main-button--alt:hover, .main-button--alt:focus, .main-button--alt:active {
+.main-button--alt:hover, .main-button--alt:focus {
   border-color: #ec1f46;
+}
+
+.main-button--alt:hover:before, .main-button--alt:focus:before {
+  font-size: 18px;
+}
+
+.main-button--alt:active {
+  border-color: #ec1f46;
+}
+
+.main-button--alt:active:before {
+  color: #ec1f46;
+  font-size: 18px;
 }
 
 .nav-button {
@@ -3731,15 +3768,19 @@ a:active {
 
 .nav-button:hover, .nav-button:focus {
   outline: none;
-  border: 1px solid #fff;
-  border-radius: 4px;
-  margin-bottom: -2px;
+}
+
+.nav-button:hover:before, .nav-button:focus:before {
+  color: #ec1f46;
 }
 
 .nav-button:active {
   outline: none;
-  border: 1px solid transparent;
-  margin-bottom: -2px;
+}
+
+.nav-button:active:before {
+  color: #ec1f46;
+  font-weight: 600;
 }
 
 @media (min-width: 768px) {
@@ -3750,15 +3791,8 @@ a:active {
 
 .dropdown-button {
   position: relative;
-  border: 1px solid transparent;
   color: transparent;
   background-color: transparent;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -3771,19 +3805,28 @@ a:active {
   left: 0;
   font-size: 25px;
   color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .dropdown-button:hover, .dropdown-button:focus {
   outline: none;
-  border-color: #ec1f46;
+}
+
+.dropdown-button:hover:before, .dropdown-button:focus:before {
+  color: #ec1f46;
 }
 
 .dropdown-button:active {
   outline: none;
-  border-color: transparent;
 }
 
 .dropdown-button:active:before {
   color: #ec1f46;
+  font-weight: 600;
 }
 /*# sourceMappingURL=main.css.map */
