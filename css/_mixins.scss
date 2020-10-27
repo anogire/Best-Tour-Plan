@@ -1,6 +1,9 @@
-@mixin back-gradient($file-name) {
-  background: linear-gradient(rgba(10, 34, 61, 0.8)), url("../img/#{$file-name}");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+@mixin image-2x($file-name) {
+  @media (-webkit-min-device-pixel-ratio: 2), 
+        (min-resolution: 192dpi) {
+    background: linear-gradient(rgba(#0a223d, 0.8)), url("../img/#{$file-name}");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }

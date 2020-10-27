@@ -137,7 +137,7 @@
           <div class="row">
             <div class="col-sm-10">
               <div class="main-hotel__caption">
-                <span class="icon icon-block" aria-label="hotel rating">
+                <span class="icon icon-block">
                   <span class="icon-star-mark star-rating"></span>
                   <span class="icon-star-mark star-rating"></span>
                   <span class="icon-star-mark star-rating"></span>
@@ -227,18 +227,15 @@
                         </div>
                       </div>
                     </div>
-                    <div class="main-hotel__item">
-                      <span class="call-text">Quick Booking</span>
-                      <div class="offer-points">
-                        <div class="offer-points__block">
-                          <span class="icon icon-phone-call hotel-icon"></span>
-                          <span class="call-text">12100</span>
-                        </div>
+                    <a href="tel:12100" class="main-hotel__item quick-call" aria-label="call to Quick Booking">
+                      <span>Quick Booking</span>
+                      <div class="call-points">
+                        <span class="icon icon-phone-call hotel-icon"></span>
+                        <span>12100</span>
                       </div>
-                    </div>
+                    </a>
                   </div>
-                  <button class="main-button main-button--main-hotel"
-                    aria-label="click the read other options of hotel">
+                  <button class="main-button main-button--big" aria-label="click the read other options of hotel">
                     View Other Options
                   </button>
                 </div>
@@ -361,122 +358,115 @@
           </div>
         </div>
         <div class="row">
-          <div class="col">
-            <div class="card-list">
-              <div class="card-list__title">
-                <h3 class="card-caption">Package summery details</h3>
+          <div class="col card-list">
+            <div class="card-list__title">
+              <h3 class="card-caption">Package summery details</h3>
+            </div>
+            <div class="container card-list__content card-list__content--sheet">
+              <div class="row dashes">
+                <div class="col-md-6 col-xl-4 card-list__block">
+                  <h4 class="card-list__caption">Purchase inclusions</h4>
+                  <ul>
+                    <li class="card-list__item card-list__item--check">
+                      <span class="font-dark">Room as per selection</span>
+                    </li>
+                    <li class="card-list__item card-list__item--check">
+                      <span class="font-dark">Half Board or All Inclusive Meal Plan</span>
+                    </li>
+                    <li class="card-list__item card-list__item--check">
+                      <span class="font-dark">Complimentary Land & Water activities</span>
+                    </li>
+                    <li class="card-list__item card-list__item--check">
+                      <span class="font-dark">Child Under 11 years old stays free</span>
+                    </li>
+                    <li class="card-list__item card-list__item--check">
+                      <span class="font-dark">Free Wi-Fi</span>
+                    </li>
+                    <li class="card-list__item card-list__item--check">
+                      <span class="font-dark">Free Secure Parking</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 col-xl-4 card-list__block">
+                  <h4 class="card-list__caption">Complimentary land based activities</h4>
+                  <ul>
+                    <li class="card-list__item card-list__item--check">
+                      <span class="font-dark">Gym</span>
+                    </li>
+                    <li class="card-list__item card-list__item--check">
+                      <span class="font-dark">Beach Volley</span>
+                    </li>
+                    <li class="card-list__item card-list__item--check">
+                      <span class="font-dark">Table tennis</span>
+                    </li>
+                    <li class="card-list__item card-list__item--check">
+                      <span class="font-dark">Soccer balls</span>
+                    </li>
+                    <li class="card-list__item card-list__item--check">
+                      <span class="font-dark">Yoga</span>
+                    </li>
+                    <li class="card-list__item card-list__item--check">
+                      <span class="font-dark">Unlimited access to driving range</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 col-xl-4 card-list__block">
+                  <h4 class="card-list__caption">Complimentary water based activities</h4>
+                  <ul>
+                    <li class="card-list__item card-list__item--check">
+                      <span class="font-dark">Water skiing</span>
+                    </li>
+                    <li class="card-list__item card-list__item--check">
+                      <span class="font-dark">Windsurfing</span>
+                    </li>
+                    <li class="card-list__item card-list__item--check">
+                      <span class="font-dark">Pedal boats</span>
+                    </li>
+                    <li class="card-list__item card-list__item--check">
+                      <span class="font-dark">Kayaking</span>
+                    </li>
+                    <li class="card-list__item card-list__item--check">
+                      <span class="font-dark">Aqua Gym</span>
+                    </li>
+                    <li class="card-list__item card-list__item--check">
+                      <span class="font-dark">Glass bottom boat trips</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="container card-list__content card-list__content--sheet">
-                <div class="row">
-                  <div class="col-md-6 col-xl-4 card-list__block">
-                    <h4 class="card-list__caption">Purchase inclusions</h4>
-                    <ul>
-                      <li class="card-list__item card-list__item--check">
-                        <span class="font-dark">Room as per selection</span>
-                      </li>
-                      <li class="card-list__item card-list__item--check">
-                        <span class="font-dark">Half Board or All Inclusive Meal Plan</span>
-                      </li>
-                      <li class="card-list__item card-list__item--check">
-                        <span class="font-dark">Complimentary Land & Water activities</span>
-                      </li>
-                      <li class="card-list__item card-list__item--check">
-                        <span class="font-dark">Child Under 11 years old stays free</span>
-                      </li>
-                      <li class="card-list__item card-list__item--check">
-                        <span class="font-dark">Free Wi-Fi</span>
-                      </li>
-                      <li class="card-list__item card-list__item--check">
-                        <span class="font-dark">Free Secure Parking</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-md-6 col-xl-4 card-list__block">
-                    <h4 class="card-list__caption">Complimentary land based activities</h4>
-                    <ul>
-                      <li class="card-list__item card-list__item--check">
-                        <span class="font-dark">Gym</span>
-                      </li>
-                      <li class="card-list__item card-list__item--check">
-                        <span class="font-dark">Beach Volley</span>
-                      </li>
-                      <li class="card-list__item card-list__item--check">
-                        <span class="font-dark">Table tennis</span>
-                      </li>
-                      <li class="card-list__item card-list__item--check">
-                        <span class="font-dark">Soccer balls</span>
-                      </li>
-                      <li class="card-list__item card-list__item--check">
-                        <span class="font-dark">Yoga</span>
-                      </li>
-                      <li class="card-list__item card-list__item--check">
-                        <span class="font-dark">Unlimited access to driving range</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-md-6 col-xl-4 card-list__block">
-                    <h4 class="card-list__caption">Complimentary water based activities</h4>
-                    <ul>
-                      <li class="card-list__item card-list__item--check">
-                        <span class="font-dark">Water skiing</span>
-                      </li>
-                      <li class="card-list__item card-list__item--check">
-                        <span class="font-dark">Windsurfing</span>
-                      </li>
-                      <li class="card-list__item card-list__item--check">
-                        <span class="font-dark">Pedal boats</span>
-                      </li>
-                      <li class="card-list__item card-list__item--check">
-                        <span class="font-dark">Kayaking</span>
-                      </li>
-                      <li class="card-list__item card-list__item--check">
-                        <span class="font-dark">Aqua Gym</span>
-                      </li>
-                      <li class="card-list__item card-list__item--check">
-                        <span class="font-dark">Glass bottom boat trips</span>
-                      </li>
-                    </ul>
-                  </div>
+              <div class="row">
+                <div class="col-md-6 col-xl-4 card-list__block">
+                  <h4 class="card-list__caption">Meal plan available</h4>
+                  <ul>
+                    <li class="card-list__item card-list__item--check">
+                      <span class="font-dark">Half Board</span>
+                    </li>
+                    <li class="card-list__item card-list__item--check">
+                      <span class="font-dark">All Inclusive</span>
+                    </li>
+                  </ul>
                 </div>
-                <div class="row">
-                  <div class="col">
-                    <hr class="dashes">
-                  </div>
+                <div class="col-md-6 col-xl-4 card-list__block">
+                  <h4 class="card-list__caption">Entertainment</h4>
+                  <ul>
+                    <li class="card-list__item card-list__item--check">
+                      <span class="font-dark">Live music</span>
+                    </li>
+                    <li class="card-list__item card-list__item--check">
+                      <span class="font-dark">DJ & Mauritian Dance Show</span>
+                    </li>
+                  </ul>
                 </div>
-                <div class="row">
-                  <div class="col-md-6 col-xl-4 card-list__block">
-                    <h4 class="card-list__caption">Meal plan available</h4>
-                    <ul>
-                      <li class="card-list__item card-list__item--check">
-                        <span class="font-dark">Half Board</span>
-                      </li>
-                      <li class="card-list__item card-list__item--check">
-                        <span class="font-dark">All Inclusive</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-md-6 col-xl-4 card-list__block">
-                    <h4 class="card-list__caption">Entertainment</h4>
-                    <ul>
-                      <li class="card-list__item card-list__item--check">
-                        <span class="font-dark">Live music</span>
-                      </li>
-                      <li class="card-list__item card-list__item--check">
-                        <span class="font-dark">DJ & Mauritian Dance Show</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-md-6 col-xl-4 card-list__block">
-                    <h4 class="card-list__caption">Check In & Check Out</h4>
-                    <ul>
-                      <li class="card-list__item card-list__item--check">
-                        <span class="font-dark">Check In Time 14:00</span>
-                      </li>
-                      <li class="card-list__item card-list__item--check">
-                        <span class="font-dark">Check Out Time 11:00</span>
-                      </li>
-                    </ul>
-                  </div>
+                <div class="col-md-6 col-xl-4 card-list__block">
+                  <h4 class="card-list__caption">Check In & Check Out</h4>
+                  <ul>
+                    <li class="card-list__item card-list__item--check">
+                      <span class="font-dark">Check In Time 14:00</span>
+                    </li>
+                    <li class="card-list__item card-list__item--check">
+                      <span class="font-dark">Check Out Time 11:00</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -502,7 +492,7 @@
                 </picture>
               </div>
               <div class="offer offer--first">
-                <span class="icon icon-block" aria-label="hotel rating">
+                <span class="icon icon-block">
                   <span class="icon-star-mark star-rating"></span>
                   <span class="icon-star-mark star-rating"></span>
                   <span class="icon-star-mark star-rating"></span>
@@ -522,8 +512,8 @@
                 </ul>
                 <div class="price-wrap">
                   <div class="offer__price-block">
-                    <span class="old-price">$10,500</span>
-                    <span class="new-price">$8,500</span>
+                    <span class="old-price">$ 10,500</span>
+                    <span class="new-price">$ 8,500</span>
                   </div>
                   <button class="main-button main-button--offer" aria-label="click the button to book our offer">
                     Book Now
@@ -554,8 +544,8 @@
                 </ul>
                 <div class="price-wrap">
                   <div class="offer__price-block">
-                    <span class="old-price">$8,500</span>
-                    <span class="new-price">$3,000</span>
+                    <span class="old-price">$ 8,500</span>
+                    <span class="new-price">$ 3,000</span>
                   </div>
                   <button class="main-button main-button--offer" aria-label="click the button to book our offer">
                     Book Now
@@ -586,8 +576,8 @@
                 </ul>
                 <div class="price-wrap">
                   <div class="offer__price-block">
-                    <span class="old-price">$10,500</span>
-                    <span class="new-price">$9,500</span>
+                    <span class="old-price">$ 10,500</span>
+                    <span class="new-price">$ 9,500</span>
                   </div>
                   <button class="main-button main-button--offer" aria-label="click the button to book our offer">
                     Book Now
@@ -618,8 +608,8 @@
                 </ul>
                 <div class="price-wrap">
                   <div class="offer__price-block">
-                    <span class="old-price">$4,500</span>
-                    <span class="new-price">$2,500</span>
+                    <span class="old-price">$ 4,500</span>
+                    <span class="new-price">$ 2,500</span>
                   </div>
                   <button class="main-button main-button--offer" aria-label="click the button to book our offer">
                     Book Now
@@ -650,8 +640,8 @@
                 </ul>
                 <div class="price-wrap">
                   <div class="offer__price-block">
-                    <span class="old-price">$6,500</span>
-                    <span class="new-price">$3,500</span>
+                    <span class="old-price">$ 6,500</span>
+                    <span class="new-price">$ 3,500</span>
                   </div>
                   <button class="main-button main-button--offer" aria-label="click the button to book our offer">
                     Book Now
@@ -676,7 +666,7 @@
                     loading="lazy">
                   <span class="review__user-name">Megan Fox</span>
                   <span class="review__date">Stayed 18 Nov, 2019</span>
-                  <span class="icon icon-block icon-block--review" aria-label="review rating">
+                  <span class="icon icon-block icon-block--review">
                     <span class="icon-star-mark star-rating"></span>
                     <span class="icon-star-mark star-rating"></span>
                     <span class="icon-star-mark star-rating"></span>
@@ -699,7 +689,7 @@
                     loading="lazy">
                   <span class="review__user-name">Megan Fox</span>
                   <span class="review__date">Stayed 18 Nov, 2019</span>
-                  <span class="icon icon-block icon-block--review" aria-label="review rating">
+                  <span class="icon icon-block icon-block--review">
                     <span class="icon-star-mark star-rating"></span>
                     <span class="icon-star-mark star-rating"></span>
                     <span class="icon-star-mark star-rating"></span>
@@ -722,7 +712,7 @@
                     loading="lazy">
                   <span class="review__user-name">Megan Fox</span>
                   <span class="review__date">Stayed 18 Nov, 2019</span>
-                  <span class="icon icon-block icon-block--review" aria-label="review rating">
+                  <span class="icon icon-block icon-block--review">
                     <span class="icon-star-mark star-rating"></span>
                     <span class="icon-star-mark star-rating"></span>
                     <span class="icon-star-mark star-rating"></span>
@@ -849,7 +839,204 @@
       </div>
     </section>
   </main>
-  <footer></footer>
+  <footer class="section section--footer">
+    <div class="container">
+      <h2 class="caption-hidden">Contact information</h2>
+      <div class="row contact-indent">
+        <div class="col-sm-5 col-md-3 footer-logo">
+          <a href="/" class="footer-logo__link" aria-label="Best tour plan logo">
+            <img src="img/logo_alt.svg" width="153" height="175" alt="Best tour plan logo" loading="lazy">
+          </a>
+        </div>
+        <div class="col-sm-7 col-md col-lg-9 dropdown-alt">
+          <div class="dropdown dropdown-indent">
+            <button class="dropdown-toggle dropdown-alt__button footer-title" type="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" aria-label="click to see all categories">
+              All categories
+            </button>
+            <ul class="dropdown-menu dropdown-alt__list">
+              <li class="dropdown-item dropdown-alt__first">
+                <h3 class="footer-title">All categories</h3>
+              </li>
+              <li>
+                <a href="/" class="dropdown-item dropdown-link">
+                  All Deals
+                </a>
+              </li>
+              <li>
+                <a href="/" class="dropdown-item dropdown-link">
+                  Hotels
+                </a>
+              </li>
+              <li>
+                <a href="/" class="dropdown-item dropdown-link">
+                  Activities
+                </a>
+              </li>
+              <li>
+                <a href="/" class="dropdown-item dropdown-link">
+                  Spa Packages
+                </a>
+              </li>
+              <li>
+                <a href="/" class="dropdown-item dropdown-link">
+                  Hotel Day Packages
+                </a>
+              </li>
+              <li>
+                <a href="/" class="dropdown-item dropdown-link">
+                  Restaurants
+                </a>
+              </li>
+              <li>
+                <a href="/" class="dropdown-item dropdown-link">
+                  Fitness
+                </a>
+              </li>
+              <li>
+                <a href="/" class="dropdown-item dropdown-link">
+                  Rodrigues
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div class="dropdown">
+              <button class="dropdown-toggle dropdown-alt__button footer-title" type="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" aria-label="click to see additional information">
+                Additional information
+              </button>
+              <ul class="dropdown-menu dropdown-alt__list">
+                <li class="dropdown-item dropdown-alt__first">
+                  <h3 class="footer-title">Additional information</h3>
+                </li>
+                <li>
+                  <a href="/" class="dropdown-item dropdown-link">
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a href="/" class="dropdown-item dropdown-link">
+                    Contact Us
+                  </a>
+                </li>
+                <li>
+                  <a href="/" class="dropdown-item dropdown-link">
+                    How does it work?
+                  </a>
+                </li>
+                <li>
+                  <a href="/" class="dropdown-item dropdown-link">
+                    Frequently Asked Questions
+                  </a>
+                </li>
+                <li>
+                  <a href="/" class="dropdown-item dropdown-link">
+                    Deals.mu loyalty program
+                  </a>
+                </li>
+                <li>
+                  <a href="/" class="dropdown-item dropdown-link">
+                    Promote your Business on BTP
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-icon">
+              <h3 class="footer-title">Social Network</h3>
+              <a href="/" class="footer-icon__item footer-icon__item--first icon icon-fb"
+                aria-label="go to our facebook page">
+              </a>
+              <a href="/" class="footer-icon__item icon icon-youtube" aria-label="go to our youtube canal"></a>
+              <a href="/" class="footer-icon__item icon icon-picture" aria-label="go to our pictures gallery"></a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropdown-toggle dropdown-alt__button footer-title" type="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" aria-label="click to see Legal information">
+              Legal information
+            </button>
+            <ul class="dropdown-menu dropdown-alt__list">
+              <li class="dropdown-item dropdown-alt__first">
+                <h3 class="footer-title">Legal information</h3>
+              </li>
+              <li>
+                <a href="/" class="dropdown-item dropdown-link">
+                  Terms & Conditions
+                </a>
+              </li>
+              <li>
+                <a href="/" class="dropdown-item dropdown-link">
+                  Disclaimer
+                </a>
+              </li>
+              <li>
+                <a href="/" class="dropdown-item dropdown-link">
+                  Cancellation policy
+                </a>
+              </li>
+              <li>
+                <a href="/" class="dropdown-item dropdown-link">
+                  Privacy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row contact-indent contact-indent--address">
+        <div class="col-lg-6">
+          <h3 class="footer-title">Contact Details</h3>
+          <span class="contacts-text">Feel free to contact us by phone, email or by our contact form</span>
+          <ul class="contacts">
+            <li class="icon icon-location contacts__item footer-text">
+              9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
+            </li>
+            <li class="icon icon-phone-call-alt contacts__item contacts__item--spec">
+              <ul class="footer-text">
+                <li>Tel (business hours) : 269 1500</li>
+                <li>Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)</li>
+                <li>Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</li>
+              </ul>
+            </li>
+            <li class="icon icon-email contacts__item footer-text">
+              <a href="mailto:cherly.lawson@example.com" class="dropdown-link" aria-label="Email us">
+                cherly.lawson@example.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="footer-title">Send us a message</h3>
+          <form class="input-wrap-send">
+            <input class="main-input main-input--send" type="text" name="full-name" placeholder="Your Full Name*"
+              maxlength="100" aria-label="enter your full name">
+            <input class="main-input main-input--send" type="tel" name="tel" placeholder="Phone Number*" maxlength="30"
+              aria-label="enter your phone number">
+            <textarea class="main-input text-input" name="message" rows="6" placeholder="Message"
+              aria-label="text of your message"></textarea>
+            <div class="form-send-bottom">
+              <button class="main-button main-button--send" type="submit" aria-label="send your message to our company">
+                Send
+              </button>
+              <span class="send-font">* Required Fields</span>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row contact-indent contact-indent--conditions">
+        <div class="col-sm-8 conditions-block">
+          <a href="/" class="conditions-link">Disclaimer</a>
+          <a href="/" class="conditions-link">Conditions of use</a>
+          <a href="/" class="conditions-link">Cancellation policy</a>
+        </div>
+        <div class="col-sm-4 conditions">
+          <img src="img/payments.jpg" width="136" height="22" alt="payment options" aria-label="payment options"
+            loading="lazy">
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
     integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
     crossorigin="anonymous"></script>
