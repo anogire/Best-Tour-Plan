@@ -3,35 +3,33 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 25px;
   @include media-breakpoint-up(lg) {
-    margin-top: 115px;
+    margin-top: 70px;
   }
 }
 .open-quote {
-  font-size: 50px;
-  opacity: 0.4;
-  color: $color-tp;
   &:before {
     position: absolute;
-    top: 12px;
-    z-index: 1;
+    top: 60px;
     left: 60px;
-    right: 60px;
+    z-index: 1;
+    font-size: 50px;
+    opacity: 0.4;
+    color: $color-tp;
     display: flex;
     align-items: center;
   }
 }
 .close-quote {
-  font-size: 50px;
-  opacity: 0.4;
-  color: $color-tp;
   &:before {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
+    bottom: 60px;
     right: 60px;
+    z-index: 1;
+    font-size: 50px;
+    opacity: 0.4;
+    color: $color-tp;
     display: flex;
     align-items: center;
   }
@@ -40,11 +38,13 @@
   position: relative;
   max-width: 730px;
   min-height: 280px;
-  background-color: $color-text-light;
-  border-radius: 8px;
-  //overflow: visible;
+  padding-top: 45px;
 }
 .review {
+  position: relative;
+  width: 100%;
+  background-color: $color-text-light;
+  border-radius: 8px;
   padding-right: 30px;
   padding-left: 30px;
   padding-bottom: 30px;
