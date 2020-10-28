@@ -1,8 +1,97 @@
-.qqq {
-  border: 1px solid white;
+.section {
+  min-width: $min-content;
+  background-color: $color-bg-main;
 }
-.www {
-  border: 1px solid black;
+.section--footer {
+  background-color: $color-bg-additional;
+  padding-bottom: 46px;
+}
+.section--logo {
+  background-color: $color-text-light;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @include media-breakpoint-up(sm) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-top: 35px;
+    padding-bottom: 40px;
+  }
+}
+.section--info {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.section--main-nav {
+  padding-bottom: 20px;
+  background-color: $color-bg-additional;
+  @include media-breakpoint-up(md) {
+      padding-top: 20px;
+  }
+}
+.section--main {
+  padding-top: 10px;
+  padding-bottom: 0;
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 30px;
+  }
+}
+.section--additional-nav {
+  padding-top: 20px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
+.section--package {
+  padding-top: 15px;
+  padding-bottom: 20px;
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 50px;
+  }
+}
+.section--visual {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+}
+.section--review {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  @include media-breakpoint-up(md) {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+}
+.section--newsletter {
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(#0a223d, 0.8)), url("../img/newsletter_back.jpg");
+  @include image-2x("newsletter_back_2x.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section--activities {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  @include media-breakpoint-up(sm) {
+    padding-bottom: 40px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-top: 60px;
+    padding-bottom: 95px;
+  }
 }
 .content-center {
   display: flex;
@@ -14,7 +103,7 @@
   align-items: center;
   justify-content: center;
   @include media-breakpoint-up(lg) {
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 }
 .info {
@@ -58,190 +147,6 @@
     .icon-info {
       color: $color-marker;
     }
-  }
-}
-.section {
-  min-width: $min-content;
-  background-color: $color-bg-main;
-}
-.section--logo {
-  background-color: $color-text-light;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  @include media-breakpoint-up(sm) {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  @include media-breakpoint-up(lg) {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-}
-.section--info {
-  padding-top: 23px;
-  padding-bottom: 23px;
-}
-.section--main-nav {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: $color-bg-additional;
-}
-.section--additional-nav {
-  padding-top: 20px;
-  @include media-breakpoint-up(lg) {
-    padding-top: 30px;
-    padding-bottom: 20px;
-  }
-}
-.section--package {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  @include media-breakpoint-up(lg) {
-    padding-bottom: 55px;
-  }
-}
-.section--visual {
-  padding-top: 10px;
-  padding-bottom: 20px;
-  @include media-breakpoint-up(lg) {
-    padding-top: 40px;
-    padding-bottom: 70px;
-  }
-}
-.section--review {
-  padding-top: 10px;
-  padding-bottom: 20px;
-  @include media-breakpoint-up(md) {
-    padding-top: 30px;
-    padding-bottom: 50px;
-  }
-  @include media-breakpoint-up(lg) {
-    padding-top: 40px;
-    padding-bottom: 70px;
-  }
-}
-.section--newsletter {
-  height: 260px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(rgba(10, 34, 61, 0.8)), url("../img/newsletter_back.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-      background: linear-gradient(rgba(10, 34, 61, 0.8)), url("../img/newsletter_back_2x.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-}
-.section--activities {
-  padding-top: 30px;
-  padding-bottom: 10px;
-  @include media-breakpoint-up(sm) {
-    padding-bottom: 40px;
-  }
-  @include media-breakpoint-up(lg) {
-    padding-top: 60px;
-    padding-bottom: 95px;
-  }
-}
-.collapse-nav {
-  @include media-breakpoint-up(md) {
-    display: block !important;
-  }
-}
-.nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  @include media-breakpoint-up(md) {
-    margin-top: 0;
-    flex-direction: row;
-  }
-}
-.nav__item {
-  font-family: $font-main;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.3;
-  color: $color-text-light;
-  text-transform: uppercase;
-  display: block;
-  padding-top: 10px;
-  padding-bottom: 0;
-  &:after {
-    content: "";
-    display: block;
-    height: 2px;
-    width: 0%;
-    background-color: $color-text-light;
-    margin-top: 10px;
-  }
-  &:hover,
-  &:focus {
-    outline: none;
-    color: $color-text-light;
-    &:after {
-      width: 100%;
-    }
-  }
-}
-.additional-nav {
-  @include media-breakpoint-up(lg) {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: space-between;
-    float: none;
-    padding: 0;
-    margin: 0;
-    background-color: transparent;
-    border: none;
-  }
-}
-.custom-dropdown-item {
-  background-color: transparent;
-  font-family: $font-main;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.3;
-  color: $color-text-main;
-  text-transform: capitalize;
-  display: block;
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-bottom: 0;
-  &:after {
-    content: "";
-    display: block;
-    height: 4px;
-    width: 0%;
-    background-color: $color-marker;
-    margin-top: 16px;
-  }
-  &:hover,
-  &:focus {
-    outline: none;
-    &:after {
-      width: 100%;
-    }
-    color: $color-marker;
-    background-color: transparent;
-  }
-  &:active {
-    outline: none;
-    color: $color-text-main;
-    background-color: transparent;
-  }
-}
-.custom-dropdown-item--additional {
-  @include media-breakpoint-up(lg) {
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 .card-list {
@@ -372,8 +277,11 @@
   position: absolute;
   top: 0;      
   left: 0;   
-  background: linear-gradient(180deg, rgba(196, 196, 196, 0) 35%, #0a223d 100%);
+  background: linear-gradient(180deg, rgba(#c4c4c4, 0) 35%, #0a223d 100%);
   border-radius: 6px;
+}
+.gradient--hotel:before {
+  background: linear-gradient(180deg, rgba(#007adf, 0.5) 0%, rgba(#fff, 0.2) 100%);
 }
 .user {
   display: flex;
@@ -528,23 +436,10 @@
   padding-bottom: 35px;
 }
 .offer__item {
-  position: relative;
   display: flex;
   align-items: center;
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 30px;
-  font-family: $font-main;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3;
-  color: $color-text-light;
-  &:before {
-    font-size: 14px;
-    position: absolute;
-    left: 0;
-    top: calc(50% - 10px);
-  }
 }
 .price-wrap {
   width: 100%;
@@ -560,12 +455,12 @@
   position: absolute;
   left: 0;
   top: 26px;
-  display: flex;
-  align-items: center;
   padding-top: 8px;
   padding-bottom: 8px;
-  padding-right: 20px;
   padding-left: 12px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
   background-color: $color-marker;
   border-radius: 0 4px 4px 0;
   font-family: $font-main;
@@ -575,104 +470,260 @@
   color: $color-text-light;
 }
 .offer-marker--small {
-  padding: 4px 10px;
   font-size: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.review-block {
+.offer-marker--main {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 70px;
-  @include media-breakpoint-up(lg) {
-    margin-top: 115px;
-  }
+  left: 0;
+  top: 0;
+  font-size: 10px;
+  border-radius: 4px;
+  padding: 4px 9px;
 }
-.open-quote {
-  font-size: 50px;
-  opacity: 0.4;
-  color: $color-tp;
-  &:before {
-    position: absolute;
-    top: 12px;
-    left: 60px;
-    right: 60px;
-    display: flex;
-    align-items: center;
-  }
-}
-.close-quote {
-  font-size: 50px;
-  opacity: 0.4;
-  color: $color-tp;
-  &:before {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 60px;
-    display: flex;
-    align-items: center;
-  }
-}
-.review-content {
-  position: relative;
-  max-width: 730px;
-  min-height: 280px;
-  background-color: $color-text-light;
-  border-radius: 8px;
-  overflow: visible;
-}
-.review {
-  padding-right: 95px;
-  padding-left: 95px;
-  padding-bottom: 30px;
-  padding-top: 45px;
+.hotel-name {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  @include media-breakpoint-up(sm) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
-.review__user-img {
-  position: absolute;
-  top: -45px;
-  left: 0;
-  right: 0;
-  width: 90px;
-  height: 90px;
+.main-hotel {
+  padding-top: 20px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 35px;
+  }
+}
+.main-hotel__caption {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.hotel-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
   object-fit: cover;
   overflow: hidden;
-  border-radius: 50%;
-  margin-right: auto;
-  margin-left: auto;
 }
-.control {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  font-size: 30px;
-  color: $color-slider;
+.main-hotel__content {
+  padding-top: 20px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+.main-hotel__card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+.map-hotel {
+  border-radius: 10px;
+  display: flex;
+  flex-basis: 50%;
+  min-height: 210px;
+}
+.main-hotel__offers {
+  border-radius: 8px;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: $color-bg-additional;
+  margin-bottom: 26px;
+  padding: 26px;
+}
+.main-hotel__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+}
+.hotel-icon {
+  color: $color-text-light;
+  font-size: 14px;
+  padding-right: 15px;
+}
+.offer-points {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+.call-points {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.offer-points__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+}
+.quick-call {
+  font-family: $font-additional;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  color: $color-text-light;
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $color-marker;
+    .hotel-icon:before {
+      color: $color-marker;
+    }
+  }
+}
+.path {
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.3;
+  color: $color-text-main;
+  padding-bottom: 5px;
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+  &:hover,
+  &:focus {
+    outline: none;
+    border-bottom: 1px solid $color-text-main;
+    border-color: $color-marker;
+    color: $color-marker;
+  }
+}
+.contact-indent {
+  padding-top: 30px;
+  @include media-breakpoint-up(sm) {
+    padding-top: 50px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-top: 75px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 105px;
+  }
+}
+.contact-indent--address {
+  @include media-breakpoint-up(xl) {
+    padding-top: 85px;
+  }
+}
+.contact-indent--conditions {
+  @include media-breakpoint-up(xl) {
+    padding-top: 90px;
+  }
+}
+
+.footer-logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px;
-  @extend .icon;
+  padding-bottom: 30px;
+  @include media-breakpoint-up(sm) {
+    justify-content: flex-start;
+    padding-bottom: 0;
+  }
+}
+.footer-logo__link {
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+.footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @include media-breakpoint-up(md) {
+    padding-bottom: 0;
+  }
+}
+.footer-icon__item {
+  font-size: 20px;
+  background-color: transparent;
+  color: $color-text-additional;
+  display: inline-block;
+  padding: 5px;
   &:hover,
   &:focus {
     outline: none;
     color: $color-marker;
   }
-  &:active {
-    outline: none;
-    color: $color-marker;
-    font-weight: 600;
+}
+.footer-icon__item--first {
+  padding-left: 30px;
+  font-size: 23px;
+}
+
+.contacts__icon {
+  color: $color-text-additional;
+  font-size: 24px;
+  padding-right: 20px;
+}
+.contacts__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.contacts__item--spec {
+  align-items: flex-start;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 25px;
+}
+.conditions-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  @include media-breakpoint-up(sm) {
+    justify-content: flex-end;
   }
 }
-.control--next {
-  right: 0;
-  margin-right: 15px;
-  @extend .icon-arr-right;
+.conditions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include media-breakpoint-up(sm) {
+    justify-content: flex-end;
+  }
 }
-.control--prev {
-  left: 0;
-  margin-left: 15px;
-  @extend .icon-arr-left;
+.conditions-link {
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  color: $color-text-light;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+  &:hover,
+  &:focus {
+    outline: none;
+    border-bottom: 1px solid $color-text-main;
+    border-color: $color-marker;
+    color: $color-marker;
+  }
 }

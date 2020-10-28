@@ -67,13 +67,15 @@
   font-size: 10px;
 }
 .dashes {
-  display: block;
-  border: none;
-  border-top: 1px dashed $color-text-additional-light;
-  margin-left: 10px;
-  margin-right: 25px;
-  margin-top: 40px;
-  padding-bottom: 10px;
+  &:after {
+    content: "";
+    width: calc(100% - 60px);
+    padding-top: 50px;
+    border-bottom: 1px dashed $color-text-additional-light;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
 }
 .card-photo__caption {
   font-family: $font-main;
@@ -125,13 +127,6 @@
   font-size: 18px;
   line-height: 1.3;
   color: $color-text-light;
-}
-.icon-block {
-  display: flex;
-  padding-bottom: 6px;
-}
-.icon-block--review {
-  padding-top: 5px;
 }
 .star-rating {
   font-size: 8px;
@@ -191,4 +186,118 @@
   color: $color-text-main;
   display: inline-block;
   padding-top: 25px;
+  z-index: 2;
+}
+.user-rating__text {
+  font-family: $font-main;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+  color: $color-text-light;
+  text-align: center;
+}
+.user-rating__mark {
+  font-family: $font-main;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.3;
+  color: $color-text-light;
+}
+.user-rating__mark--small {
+  font-size: 10px;
+}
+.hotel-options {
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  color: $color-text-main;
+  display: inline-block;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  @include media-breakpoint-up(sm) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+.main-title {
+  font-family: $font-main;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.25;
+  color: $color-text-main;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-right: 15px;
+  padding-bottom: 3px;
+  @include media-breakpoint-up(sm) {
+    font-size: 24px;
+    padding-bottom: 0;
+  }
+}
+.hotel-item-text {
+  font-family: $font-additional;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3;
+  color: $color-text-light;
+}
+.hotel-item-text--small {
+  font-size: 10px;
+}
+.hotel-item-text--price {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.4;
+}
+.footer-title{
+  font-family: $font-main;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+  color: $color-text-light;
+  text-transform: uppercase;
+}
+.footer-text {
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  color: $color-text-additional;
+}
+.footer-text-link {
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: $color-text-additional;
+  padding-bottom: 5px;
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+  &:hover,
+  &:focus {
+    outline: none;
+    border-bottom: 1px solid $color-text-main;
+    border-color: $color-marker;
+    color: $color-marker;
+  }
+}
+.contacts-text {
+  @extend .footer-text;
+  display: block;
+  padding-top: 20px;
+}
+.send-font {
+  font-family: $font-main;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  color: $color-text-additional-light;
+}
+.offer-text {
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  color: $color-text-light;
 }

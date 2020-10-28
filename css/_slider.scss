@@ -1,0 +1,154 @@
+.review-block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  @include media-breakpoint-up(lg) {
+    margin-top: 70px;
+  }
+}
+.open-quote {
+  &:before {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    z-index: 1;
+    font-size: 50px;
+    opacity: 0.4;
+    color: $color-tp;
+    display: flex;
+    align-items: center;
+  }
+}
+.close-quote {
+  &:before {
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+    z-index: 1;
+    font-size: 50px;
+    opacity: 0.4;
+    color: $color-tp;
+    display: flex;
+    align-items: center;
+  }
+}
+.review-content {
+  position: relative;
+  max-width: 730px;
+  min-height: 280px;
+  padding-top: 45px;
+}
+.review {
+  position: relative;
+  width: 100%;
+  background-color: $color-text-light;
+  border-radius: 8px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include media-breakpoint-up(sm) {
+    padding-right: 95px;
+    padding-left: 95px;
+  }
+}
+.review__user-img {
+  position: absolute;
+  top: -45px;
+  left: 0;
+  right: 0;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  font-size: 30px;
+  color: $color-slider;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  z-index: 2;
+  @extend .icon;
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $color-marker;
+  }
+  &:active {
+    outline: none;
+    color: $color-marker;
+    font-weight: 600;
+  }
+  @include media-breakpoint-up(sm) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+.control--next {
+  right: 0;
+  margin-right: 15px;
+  @extend .icon-arr-right;
+}
+.control--prev {
+  left: 0;
+  margin-left: 15px;
+  @extend .icon-arr-left;
+}
+.control--hotel {
+  color: $color-text-light;
+  opacity: 0.8;
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $color-marker;
+    opacity: 1;
+  }
+  &:active {
+    outline: none;
+    color: $color-text-light;
+    opacity: 1;
+    font-weight: 600;
+  }
+}
+.user-rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  @include media-breakpoint-up(sm) {
+    justify-content: flex-end;
+  }
+}
+.user-rating__wrap {
+  width: 65px;
+  height: 45px;
+  background: $color-marker;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon-block {
+  display: flex;
+  padding-bottom: 6px;
+}
+.icon-block--review {
+  padding-top: 5px;
+}
+.content-inner {
+  width: 100%;
+  height: 100%;
+}
