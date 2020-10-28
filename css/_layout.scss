@@ -1,3 +1,6 @@
+.qqq {
+  border: 1px solid black;
+}
 .section {
   min-width: $min-content;
   background-color: $color-bg-main;
@@ -24,9 +27,11 @@
   padding-bottom: 16px;
 }
 .section--main-nav {
-  padding-top: 20px;
   padding-bottom: 20px;
   background-color: $color-bg-additional;
+  @include media-breakpoint-up(md) {
+      padding-top: 20px;
+  }
 }
 .section--main {
   padding-top: 10px;
@@ -434,23 +439,10 @@
   padding-bottom: 35px;
 }
 .offer__item {
-  position: relative;
   display: flex;
   align-items: center;
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 30px;
-  font-family: $font-main;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3;
-  color: $color-text-light;
-  &:before {
-    font-size: 14px;
-    position: absolute;
-    left: 0;
-    top: calc(50% - 10px);
-  }
 }
 .price-wrap {
   width: 100%;
@@ -564,7 +556,7 @@
 .hotel-icon {
   color: $color-text-light;
   font-size: 14px;
-  padding-right: 10px;
+  padding-right: 15px;
 }
 .offer-points {
   display: flex;
@@ -679,30 +671,20 @@
   padding-left: 30px;
   font-size: 23px;
 }
-.contacts__item {
-  position: relative;
+
+.contacts__icon {
   color: $color-text-additional;
+  font-size: 24px;
+  padding-right: 20px;
+}
+.contacts__item {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 40px;
-  margin-bottom: 20px;
-  &:before {
-    font-size: 24px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  padding-bottom: 20px;
 }
 .contacts__item--spec {
   align-items: flex-start;
-  &:before {
-    bottom: unset;
-  }
 }
 .contacts {
   display: flex;

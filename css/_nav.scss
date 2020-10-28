@@ -9,7 +9,6 @@
   align-items: center;
   justify-content: space-between;
   @include media-breakpoint-up(md) {
-    margin-top: 0;
     flex-direction: row;
   }
 }
@@ -22,7 +21,6 @@
   text-transform: uppercase;
   display: block;
   padding-top: 10px;
-  padding-bottom: 0;
   &:after {
     content: "";
     display: block;

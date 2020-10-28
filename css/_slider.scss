@@ -42,7 +42,7 @@
   min-height: 280px;
   background-color: $color-text-light;
   border-radius: 8px;
-  overflow: visible;
+  //overflow: visible;
 }
 .review {
   padding-right: 30px;
@@ -79,10 +79,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 0;
-  padding-left: 0;
+  padding: 15px 0;
   z-index: 2;
   @extend .icon;
   &:hover,

@@ -70,7 +70,6 @@
   &:after {
     content: "";
     width: calc(100% - 60px);
-    height: 1px;
     padding-top: 50px;
     border-bottom: 1px dashed $color-text-additional-light;
     margin-right: auto;
@@ -264,7 +263,24 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.6;
-  color: $color-text-additional-light;
+  color: $color-text-additional;
+}
+.footer-text-link {
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: $color-text-additional;
+  padding-bottom: 5px;
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+  &:hover,
+  &:focus {
+    outline: none;
+    border-bottom: 1px solid $color-text-main;
+    border-color: $color-marker;
+    color: $color-marker;
+  }
 }
 .contacts-text {
   @extend .footer-text;
@@ -272,9 +288,16 @@
   padding-top: 20px;
 }
 .send-font {
-  font-family: $font-main;;
+  font-family: $font-main;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.25;
   color: $color-text-additional-light;
+}
+.offer-text {
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  color: $color-text-light;
 }

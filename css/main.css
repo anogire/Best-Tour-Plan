@@ -2288,6 +2288,10 @@ iframe {
   content: "\e9bd";
 }
 
+.qqq {
+  border: 1px solid black;
+}
+
 .section {
   min-width: 300px;
   background-color: #f5fafe;
@@ -2324,9 +2328,14 @@ iframe {
 }
 
 .section--main-nav {
-  padding-top: 20px;
   padding-bottom: 20px;
   background-color: #0a223d;
+}
+
+@media (min-width: 768px) {
+  .section--main-nav {
+    padding-top: 20px;
+  }
 }
 
 .section--main {
@@ -2981,7 +2990,6 @@ iframe {
 }
 
 .offer__item {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2990,19 +2998,6 @@ iframe {
           align-items: center;
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 30px;
-  font-family: "Mulish", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.3;
-  color: #fff;
-}
-
-.offer__item:before {
-  font-size: 14px;
-  position: absolute;
-  left: 0;
-  top: calc(50% - 10px);
 }
 
 .price-wrap {
@@ -3203,7 +3198,7 @@ iframe {
 .hotel-icon {
   color: #fff;
   font-size: 14px;
-  padding-right: 10px;
+  padding-right: 15px;
 }
 
 .offer-points {
@@ -3377,9 +3372,13 @@ iframe {
   font-size: 23px;
 }
 
-.contacts__item {
-  position: relative;
+.contacts__icon {
   color: #bdbdbd;
+  font-size: 24px;
+  padding-right: 20px;
+}
+
+.contacts__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3389,35 +3388,13 @@ iframe {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 40px;
-  margin-bottom: 20px;
-}
-
-.contacts__item:before {
-  font-size: 24px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding-bottom: 20px;
 }
 
 .contacts__item--spec {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-}
-
-.contacts__item--spec:before {
-  bottom: unset;
 }
 
 .contacts {
@@ -3524,7 +3501,6 @@ iframe {
 
 @media (min-width: 768px) {
   .nav {
-    margin-top: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -3541,7 +3517,6 @@ iframe {
   text-transform: uppercase;
   display: block;
   padding-top: 10px;
-  padding-bottom: 0;
 }
 
 .nav__item:after {
@@ -3849,7 +3824,6 @@ iframe {
 .dashes:after {
   content: "";
   width: calc(100% - 60px);
-  height: 1px;
   padding-top: 50px;
   border-bottom: 1px dashed #e0e0e0;
   margin-right: auto;
@@ -4075,7 +4049,25 @@ iframe {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.6;
-  color: #e0e0e0;
+  color: #bdbdbd;
+}
+
+.footer-text-link {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #bdbdbd;
+  padding-bottom: 5px;
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+}
+
+.footer-text-link:hover, .footer-text-link:focus {
+  outline: none;
+  border-bottom: 1px solid #333;
+  border-color: #ec1f46;
+  color: #ec1f46;
 }
 
 .contacts-text {
@@ -4089,6 +4081,14 @@ iframe {
   font-size: 12px;
   line-height: 1.25;
   color: #e0e0e0;
+}
+
+.offer-text {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #fff;
 }
 
 .input-wrap {
@@ -4177,7 +4177,6 @@ iframe {
   padding-left: 33px;
   background-color: #fff;
   color: #000;
-  cursor: pointer;
 }
 
 .main-input::-webkit-input-placeholder {
@@ -4197,7 +4196,9 @@ iframe {
 }
 
 .main-input:hover, .main-input:focus {
-  outline: 1px solid #ec1f46;
+  outline: none;
+  -webkit-box-shadow: inset 0 0 0 1px #ec1f46;
+          box-shadow: inset 0 0 0 1px #ec1f46;
 }
 
 .main-input--email {
@@ -4341,6 +4342,8 @@ iframe {
   padding: 18px 33px;
   text-align: center;
   border-radius: 0 4px 4px 0;
+  -webkit-box-shadow: 0 0 0 1px #ec1f46;
+          box-shadow: 0 0 0 1px #ec1f46;
 }
 
 .main-button--alt:before {
@@ -4386,7 +4389,10 @@ iframe {
   display: block;
   margin-left: auto;
   margin-right: -10px;
-  padding: 10px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 .nav-button:hover, .nav-button:focus {
@@ -4519,7 +4525,6 @@ iframe {
   min-height: 280px;
   background-color: #fff;
   border-radius: 8px;
-  overflow: visible;
 }
 
 .review {
@@ -4576,10 +4581,7 @@ iframe {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 0;
-  padding-left: 0;
+  padding: 15px 0;
   z-index: 2;
 }
 
